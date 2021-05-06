@@ -365,3 +365,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.uvaColor{
+    color: #F84C1E !important 
+}
+.uvaColor:hover{
+    color: #b03919 !important
+}
