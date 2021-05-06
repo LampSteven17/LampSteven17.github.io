@@ -367,8 +367,15 @@ body {
 }
 
 .uvaColor{
-    color: #F84C1E !important 
+    color: #F84C1E !important; 
 }
 .uvaColor:hover{
-    color: #b03919 !important
+    color: #b03919 !important;
+}
+
+.headerImage{
+    width:100%;
+    max-width: 750px;
+    height: auto;
+    background-repeat: no-repeat bottom center scroll;
 }
