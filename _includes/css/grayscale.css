@@ -375,7 +375,8 @@ body {
 
 .headerImage{
     width:100%;
-    max-width: 750px;
+    max-width: 350px;
+    padding-top: 100px;
     height: auto;
     background-repeat: no-repeat bottom center scroll;
 }
