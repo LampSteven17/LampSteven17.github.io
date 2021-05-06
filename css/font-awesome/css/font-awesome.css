@@ -20,14 +20,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.link{
-    color: #F84C1E 
-}
-.link:hover{
-    color: #b03919
-}
-
-
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
