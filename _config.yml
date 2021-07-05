@@ -22,3 +22,10 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
+# Cock&Mock Settings
+mocktitle: The Cock & Mock
+mockemail: pmon22609@gmail.com
+mockurl: https://LampSteven17.github.io/cocktails
+mockdescription: "Open Source Cocktails"
