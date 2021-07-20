@@ -375,8 +375,8 @@ body {
 
 .cnmImage{
   width:100%;
-  max-width: 500px;
-  padding-top: 5px;
+  max-width: 750px;
+  padding-top: 0px;
   padding-bottom: 35px;
   height: auto;
   background-repeat: no-repeat bottom center scroll;
