@@ -214,7 +214,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -231,7 +231,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -367,10 +367,19 @@ body {
 }
 
 .uvaColor{
-    color: #F84C1E !important; 
+    color: #F84C1E !important;
 }
 .uvaColor:hover{
     color: #b03919 !important;
+}
+
+.cnmImage{
+  width:100%;
+  max-width: 1000px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  height: auto;
+  background-repeat: no-repeat bottom center scroll;
 }
 
 .headerImage{
