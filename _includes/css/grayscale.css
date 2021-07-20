@@ -373,6 +373,13 @@ body {
     color: #b03919 !important;
 }
 
+.recipieImage{
+  width:100%;
+  max-width: 100px;
+  height: auto;
+  background-repeat: no-repeat bottom center scroll;
+}
+
 .cnmImage{
   width:100%;
   max-width: 800px;
