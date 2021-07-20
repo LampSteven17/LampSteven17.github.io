@@ -373,6 +373,16 @@ body {
     color: #b03919 !important;
 }
 
+@media (max-width: 767px) {
+  .recipieImage{
+    width:100%;
+    max-width: 100px;
+    height: auto;
+    float: right;
+    background-repeat: no-repeat bottom center scroll;
+  }
+}
+
 .recipieImage{
   width:100%;
   max-width: 200px;
