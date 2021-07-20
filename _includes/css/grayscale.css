@@ -375,9 +375,10 @@ body {
 
 .recipieImage{
   width:100%;
-  max-width: 100px;
+  max-width: 300px;
   height: auto;
   float: right;
+  padding-right: 30px;
   background-repeat: no-repeat bottom center scroll;
 }
 
