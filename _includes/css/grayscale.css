@@ -377,7 +377,8 @@ body {
   width:100%;
   max-width: 300px;
   height: auto;
-  float: middle;
+  float: right;
+  padding-right: 200px
   background-repeat: no-repeat bottom center scroll;
 }
 
