@@ -378,7 +378,8 @@ body {
     width:100%;
     max-width: 100px;
     height: auto;
-    float: left !important;
+    float: none !important;
+    padding-bottom: 10px;
     background-repeat: no-repeat bottom center scroll;
   }
 }
