@@ -199,59 +199,139 @@
   <div class="card-block">
     <!--- CHANGE WITHIN ME --->
 
-    <label for="selection">Choose an item:</label>
+    <label for="selection">Choose a role:</label>
         <select name="selection" id="selection">
-            <option value="0">Select item...</option>
-            <option value="1">Rigatoni</option>
-            <option value="2">Dave</option>
-            <option value="3">Pumpernickel</option>
-            <option value="4">Reeses</option>
+            <option value="0" selected>No role selected</option>
+            <option value="1">Close Combat</option>
+            <option value="2">Ranged Combat</option>
+            <option value="3">Support</option>
+            <option value="4">Jack of All Trades</option>
         </select>
-
-    <div id="showMe" style="display:none;">
-        JavaScript
-        <p><img src="./assets/images/cat.jpg" class="img-responsive" alt=""></p>
-    </div>
-    <div id="showMeToo" style="display:none;">
-        is so
-        <p><img src="./assets/images/img-01.jpg" class="img-responsive" alt=""></p>
-    </div>
-    <div id="showMeThree" style="display:none;">
-        much
-        <p><img src="./assets/images/img-02.jpg" class="img-responsive" alt=""></p>
-    </div>
-    <div id="showMeFour" style="display:none;">
-        fun
-        <p><img src="./assets/images/img-03.jpg" class="img-responsive" alt=""></p>
-    </div>
 
     <script>
         var elem = document.getElementById("selection");
         elem.onchange = function(){
-            var hiddenDiv = document.getElementById("showMe");
-            var hiddenDiv2 = document.getElementById("showMeToo");
-            var hiddenDiv3 = document.getElementById("showMeThree");
-            var hiddenDiv4 = document.getElementById("showMeFour");
-            hiddenDiv.style.display = (this.value == "1") ? "block":"none";
+            var hiddenDiv1 = document.getElementById("close");
+            var hiddenDiv2 = document.getElementById("ranged");
+            var hiddenDiv3 = document.getElementById("support");
+            var hiddenDiv4 = document.getElementById("jack");
+            hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
             hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
             hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
             hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
-};
+        };
     </script>
 
     <h2>What is a spell?</h2>
     <p style="margin-bottom:1cm;">A spell is...</p>
 
-    <h2>Here are your recommended spells:</h2>
+    <h2 style="margin-bottom:1px">Here are your recommended spells:</h2>
 
-    <div style="display:table;">
-        <div style="float:left;width:30%">
-            <h2> Cantrips </h2>
-            <p> Mage Hand </p>
+    <div id="close" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrips </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
         </div>
-        <div style="float:left;width:70%">
-            <h2> Explanation </h2>
-            <p> Mage Hand is good because whatever... </p>
+        <div class="row">
+            <div class="col-md-4">
+                <p> True Strike </p>
+            </div>
+            <div class="col-md-8">
+                <p> True Strike is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Vicious Mockery </p>
+            </div>
+            <div class="col-md-8">
+                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ranged" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrips </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mage Hand </p>
+            </div>
+            <div class="col-md-8">
+                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Vicious Mockery </p>
+            </div>
+            <div class="col-md-8">
+                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="support" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrips </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mage Hand </p>
+            </div>
+            <div class="col-md-8">
+                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mending </p>
+            </div>
+            <div class="col-md-8">
+                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="jack" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrips </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mending </p>
+            </div>
+            <div class="col-md-8">
+                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Light </p>
+            </div>
+            <div class="col-md-8">
+                <p> Light is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+            </div>
         </div>
     </div>
 
@@ -276,6 +356,8 @@
     <!---  CHANGE WITHIN ME --->
   </div>
 </div>
+
+
 
 <!---------------------------------------------------------------------------------------------------------------------->
 
