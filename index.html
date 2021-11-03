@@ -199,6 +199,33 @@
   <div class="card-block">
     <!--- CHANGE WITHIN ME --->
 
+    <label for="selection">Choose an item:</label>
+        <select name="selection" id="selection">
+            <option value="1">Rigatoni</option>
+            <option value="2">Dave</option>
+            <option value="3">Pumpernickel</option>
+            <option value="4">Reeses</option>
+        </select>
+
+    <div id="showMe" style="display:none;"> JavaScript </div>
+    <div id="showMeToo" style="display:none;"> is so </div>
+    <div id="showMeThree" style="display:none;"> much </div>
+    <div id="showMeFour" style="display:none;"> fun </div>
+
+    <script>
+        var elem = document.getElementById("selection");
+        elem.onchange = function(){
+            var hiddenDiv = document.getElementById("showMe");
+            var hiddenDiv2 = document.getElementById("showMeToo");
+            var hiddenDiv3 = document.getElementById("showMeThree");
+            var hiddenDiv4 = document.getElementById("showMeFour");
+            hiddenDiv.style.display = (this.value == "1") ? "block":"none";
+            hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
+            hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
+            hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+};
+    </script>
+
     <h2>What is a spell?</h2>
     <p style="margin-bottom:1cm;">A spell is...</p>
 
