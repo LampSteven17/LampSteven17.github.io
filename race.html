@@ -46,22 +46,22 @@
         <img src="./assets/images/img-06.jpg" class="img-responsive" alt="">
       </div>
       <div class="col-md-8">
-        <h3 class="h5">want another race?</h3>
+        <h3 class="h5">Want to be another race?</h3>
 
-        <label for="selection">want another race?</label>
-            <select name="selection" id="selection">
+        <label for="selection_race">want another race?</label>
+            <select name="selection_race" id="selection_race">
                 <option value="0" selected>No race selected</option>
-                <option value="1">R1</option>
-                <option value="2">R2</option>
+                <option value="1">Dragonborn</option>
+                <option value="2">Dwarf</option>
                 <option value="3">R3</option>
                 <option value="4">R4</option>
             </select>
 
         <script>
-            var elem = document.getElementById("selection");
+            var elem = document.getElementById("selection_race");
             elem.onchange = function(){
-                var hiddenDiv1 = document.getElementById("R1");
-                var hiddenDiv2 = document.getElementById("R2");
+                var hiddenDiv1 = document.getElementById("Dragonborn");
+                var hiddenDiv2 = document.getElementById("Dwarf");
                 var hiddenDiv3 = document.getElementById("R3");
                 var hiddenDiv4 = document.getElementById("R4");
                 hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
@@ -71,9 +71,9 @@
             };
         </script>
 
-        <div id="R1" style="display:none;">
+        <div id="Dragonborn" style="display:none;">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-4">
                     <h3> Race </h3>
                 </div>
                 <div class="col-md-8">
@@ -82,19 +82,31 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p> R1 </p>
-                    <p> Who are you as R1</p>
+                    <p> Dragonborn </p>
+                    <p> A pround people desdended from various types of dragons. They look as a dragon standing upright in human form.</p>
                 </div>
                 <div class="col-md-8">
-                    <p> What's good to be an R1 </p>
+                    <p> You are especially strong and charismatic. You can use your draconic breath as a weapon, such as breathing fire. You take less damage from various elements based on your draconic lineage. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Race </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> Explanation </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p> Who are you as R2 </p>
+                    <p> Dwarf </p>
+                    <p> Hardy warriors and miners that stand under five feet tall. They have significant courage and endurance.</p>
                 </div>
                 <div class="col-md-8">
-                    <p> What's good to be an R2 </p>
+                    <p> You are especially hardy. You can see in the dark. You know much about mining and crafting. </p>
                 </div>
             </div>
         </div>
