@@ -53,8 +53,8 @@
                 <option value="0" selected>No race selected</option>
                 <option value="1">Dragonborn</option>
                 <option value="2">Dwarf</option>
-                <option value="3">R3</option>
-                <option value="4">R4</option>
+                <option value="3">Hill Dwarf</option>
+                <option value="4">Mountain Dwarf</option>
             </select>
 
         <script>
@@ -62,8 +62,8 @@
             elem.onchange = function(){
                 var hiddenDiv1 = document.getElementById("Dragonborn");
                 var hiddenDiv2 = document.getElementById("Dwarf");
-                var hiddenDiv3 = document.getElementById("R3");
-                var hiddenDiv4 = document.getElementById("R4");
+                var hiddenDiv3 = document.getElementById("Hill Dwarf");
+                var hiddenDiv4 = document.getElementById("Mountain Dwarf");
                 hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
                 hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
                 hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
@@ -74,16 +74,15 @@
         <div id="Dragonborn" style="display:none;">
             <div class="row">
                 <div class="col-md-4">
-                    <h3> Race </h3>
+                    <h3> Who are you? </h3>
                 </div>
                 <div class="col-md-8">
-                    <h3> Explanation </h3>
+                    <h3> What's good to be a Dragonborn? </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p> Dragonborn </p>
-                    <p> A pround people desdended from various types of dragons. They look as a dragon standing upright in human form.</p>
+                    <p> A pround people desdended from various types of dragons. They look as a dragon standing upright in human form. </p>
                 </div>
                 <div class="col-md-8">
                     <p> You are especially strong and charismatic. You can use your draconic breath as a weapon, such as breathing fire. You take less damage from various elements based on your draconic lineage. </p>
@@ -94,22 +93,63 @@
         <div id="Dwarf" style="display:none;">
             <div class="row">
                 <div class="col-md-4">
-                    <h3> Race </h3>
+                    <h3> Who are you? </h3>
                 </div>
                 <div class="col-md-8">
-                    <h3> Explanation </h3>
+                    <h3> What's good to be a Dwarf? </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p> Dwarf </p>
-                    <p> Hardy warriors and miners that stand under five feet tall. They have significant courage and endurance.</p>
+                    <p> Hardy warriors and miners that stand under five feet tall. They have significant courage and endurance. </p>
                 </div>
                 <div class="col-md-8">
                     <p> You are especially hardy. You can see in the dark. You know much about mining and crafting. </p>
                 </div>
             </div>
         </div>
+
+
+        <div id="Hill Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Hill Dwarf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Dwarves from the southern kingdoms that have keep senses and remarkable resiliance. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially hardy and wise. You can see in the dark. You know much about mining and crafting. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Mountain Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Mountain Dwarf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Rugged dwarves form the north that are accustomed to the difficult terrain. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially hardy and strong. You can see in the dark. You know much about mining and crafting. </p>
+                </div>
+            </div>
+        </div>
+
+
+
 
       </div>
     </div>
