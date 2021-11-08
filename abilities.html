@@ -9,20 +9,24 @@
 
       <div class="col-md-3">
           <img src="./assets/images/isoSTR.png" class="img-responsive" alt="">
-          <h1 class="centered" id="strVal">8</h1>
+          <h1 class="centered" id="strVal" value="8"></h1>
       </div>
 
       <script>
           var elem = document.getElementById("strVal");
           elem.onchange = function(){
-              var hiddenDiv1 = document.getElementById("close");
-              var hiddenDiv2 = document.getElementById("ranged");
-              var hiddenDiv3 = document.getElementById("support");
-              var hiddenDiv4 = document.getElementById("jack");
-              hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
-              hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
-              hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
-              hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+              var h8  = document.getElementById("8s");
+              var h10 = document.getElementById("10s");
+              var h12 = document.getElementById("12s");
+              var h13 = document.getElementById("13s");
+              var h14 = document.getElementById("14s");
+              var h15 = document.getElementById("15s");
+              h8.style.display  = (this.value == "8")  ? "block":"none";
+              h10.style.display = (this.value == "10") ? "block":"none";
+              h12.style.display = (this.value == "12") ? "block":"none";
+              h13.style.display = (this.value == "13") ? "block":"none";
+              h14.style.display = (this.value == "14") ? "block":"none";
+              h15.style.display = (this.value == "15") ? "block":"none";
           };
       </script>
 
@@ -43,7 +47,7 @@
         </div>
 
 
-        <div class="row" id="8" style="display:none">
+        <div class="row" id="8s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              8:
           </div>
@@ -55,7 +59,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="10s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              10:
           </div>
@@ -63,11 +67,11 @@
             Can pick up a tomato.
           </div>
           <div class="col-md-2">
-            Ex. Common Individual
+            Common Individual
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="12s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              12:
           </div>
@@ -75,11 +79,11 @@
             A good arm, can throw a tomato on top of a 2 story building.
           </div>
           <div class="col-md-2">
-            Ex. Average Individual
+            Average Individual
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="13s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              13:
           </div>
@@ -87,11 +91,11 @@
             A great arm, can pitch a tomato above 80mph.
           </div>
           <div class="col-md-2">
-            Ex. Atheltic Indivual
+            Atheltic Indivual
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="14s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              14:
           </div>
@@ -99,11 +103,11 @@
             After benchpressing a cart of tomatoes, can bullet a tomato over a culdesac.
           </div>
           <div class="col-md-2">
-            Ex. Bodybuilder
+            Bodybuilder
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="15s" style="display:none">
           <div class="col-md-1" style="text-align:right">
              15:
           </div>
@@ -111,7 +115,7 @@
             After benchpressing a mountain of tomatoes, can throw said tomatoes over a litteral mountain.
           </div>
           <div class="col-md-2">
-            Ex. A God Who's Soul Purpose is Throwing Tomatoes
+            A God Who's Soul Purpose is Throwing Tomatoes
           </div>
         </div>
 
