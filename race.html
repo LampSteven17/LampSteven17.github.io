@@ -2,25 +2,333 @@
   <div class="card-block">
     <!--- CHANGE WITHIN ME --->
     <h2>What is a race?</h2>
-    <p style="margin-bottom:1cm;">A race is...</p>
-
+    <p style="margin-bottom:1cm;">A race is a character's fantasy species or ancestry. It effects your chracter's natural-born talents.</p>
     <h2>Here are your recommended races:</h2>
+
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Amelia App</h3>
-        <p>June 2017</p>
       </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Portland</h3>
-        <p>March 2017</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Denz for Nilon</h3>
-        <p>Jan 2017</p>
+      <div class="col-md-8">
+        <h3 class="h5" style=margin-top:10px;margin-bottom:10px;>1. Half-Elf</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style=margin-top:10px;margin-bottom:10px;> Who are you? </h5>
+            </div>
+            <div class="col-md-8">
+                <h5 style=margin-top:10px;margin-bottom:10px;> Why to be a Half-Elf? </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> A being that is half-elf and half another race. They often make good diplomats because they are apart of two cultures. </p>
+            </div>
+            <div class="col-md-8">
+                <p> [More Explanation for why choosing this for this class.]You are especially charismatic and good at a variety of skills. You can see in the dark. It is difficult to charm you into doing things against your will. </p>
+            </div>
+        </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3 class="h5">2. Tiefling</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Who are you? </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Why to be a Tiefling? </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Any person with an infernal bloodline. They often have horns, tails, wings, or other animal parts to show this lineage physically. </p>
+            </div>
+            <div class="col-md-8">
+                <p> [More Explanation for why choosing this for this class.] You are especially smart and charismatic. You can see in the dark. You take less damage from various elements based on your demonic lineage.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3 class="h5">3. Variant Assimar</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Who are you? </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Why to be an Assimar? </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Any person with an angelic bloodline. They often have horns, tails, wings, or other animal parts to show this lineage physically. </p>
+            </div>
+            <div class="col-md-8">
+                <p> [More Explanation for why choosing this for this class.]You are especially smart. You can see in the dark and heal your friends. You take less damage from various elements based on your angelic lineage. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="./assets/images/img-06.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3 class="h5">Want another one?</h3>
+
+        <label for="selection_race">Choose one race: </label>
+            <select name="selection_race" id="selection_race">
+                <option value="0" selected>--No race selected--</option>
+                <option value="1">Dragonborn</option>
+                <option value="2">Dwarf</option>
+                <option value="3">Hill Dwarf</option>
+                <option value="4">Mountain Dwarf</option>
+                <option value="5">Elf</option>
+                <option value="6">Eladrin Elf</option>
+                <option value="7">High Elf</option>
+                <option value="8">Wood Elf</option>
+                <option value="9">Half-Elf</option>
+                <option value="10">Half-Orc</option>
+                <option value="11">Halfling</option>
+                <option value="12">Stout</option>
+                <option value="13">Lightfoot Halfling</option>
+                <option value="14">Human</option>
+                <option value="15">Rock Gnome</option>
+                <option value="16">Tiefling</option>
+                <option value="17">Variant Assimar</option>
+            </select>
+
+        <script>
+            var elem = document.getElementById("selection_race");
+            elem.onchange = function(){
+                var hiddenDiv1 = document.getElementById("Dragonborn");
+                var hiddenDiv2 = document.getElementById("Dwarf");
+                var hiddenDiv3 = document.getElementById("Hill Dwarf");
+                var hiddenDiv4 = document.getElementById("Mountain Dwarf");
+                var hiddenDiv5 = document.getElementById("Elf");
+                var hiddenDiv6 = document.getElementById("Eladrin Elf");
+                var hiddenDiv7 = document.getElementById("High Elf");
+                var hiddenDiv8 = document.getElementById("Wood Elf");
+                var hiddenDiv9 = document.getElementById("Half-Elf");
+                var hiddenDiv10 = document.getElementById("Half-Orc");
+                var hiddenDiv11 = document.getElementById("Halfling");
+                var hiddenDiv12 = document.getElementById("Stout");
+                var hiddenDiv13 = document.getElementById("Lightfoot Halfling");
+                var hiddenDiv14 = document.getElementById("Human");
+                var hiddenDiv15 = document.getElementById("Rock Gnome");
+                var hiddenDiv16 = document.getElementById("Tiefling");
+                var hiddenDiv17 = document.getElementById("Variant Assimar");
+                hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
+                hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
+                hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
+                hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+                hiddenDiv5.style.display = (this.value == "5") ? "block":"none";
+                hiddenDiv6.style.display = (this.value == "6") ? "block":"none";
+                hiddenDiv7.style.display = (this.value == "7") ? "block":"none";
+                hiddenDiv8.style.display = (this.value == "8") ? "block":"none";
+                hiddenDiv9.style.display = (this.value == "9") ? "block":"none";
+                hiddenDiv10.style.display = (this.value == "10") ? "block":"none";
+                hiddenDiv11.style.display = (this.value == "11") ? "block":"none";
+                hiddenDiv12.style.display = (this.value == "12") ? "block":"none";
+                hiddenDiv13.style.display = (this.value == "13") ? "block":"none";
+                hiddenDiv14.style.display = (this.value == "14") ? "block":"none";
+                hiddenDiv15.style.display = (this.value == "15") ? "block":"none";
+                hiddenDiv16.style.display = (this.value == "16") ? "block":"none";
+                hiddenDiv17.style.display = (this.value == "17") ? "block":"none";
+            };
+        </script>
+
+        <div id="Dragonborn" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Dragonborn? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> A pround people desdended from various types of dragons. They look as a dragon standing upright in human form. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially strong and charismatic. You can use your draconic breath as a weapon, such as breathing fire. You take less damage from various elements based on your draconic lineage. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Dwarf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Hardy warriors and miners that stand under five feet tall. They have significant courage and endurance. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially hardy. You can see in the dark. You know much about mining and crafting. </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Hill Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Hill Dwarf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Dwarves from the southern kingdoms that have keep senses and remarkable resiliance. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially hardy and wise. You can see in the dark. You know much about mining and crafting. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Mountain Dwarf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Mountain Dwarf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Rugged dwarves form the north that are accustomed to the difficult terrain. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially hardy and strong. You can see in the dark. You know much about mining and crafting. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Elf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be an Elf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> A graceful and magical people that live in ancient forests. They loved music, art, and poetry. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially dexterious. You can see in the dark and are very perceptive. It is difficult to charm you into doing things against your will. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Eladrin Elf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be an Eladrin Elf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Elves of fairy decent. Their apperance and personality change with the seasons. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially dexterious and smart. You can see in the dark and are very perceptive. It is difficult to charm you into doing things against your will and trap you where you don't wish to be. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="High Elf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a High Elf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Sun and moon elves that are reclusive and often haughty. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially dexterious and smart. You can see in the dark and are very perceptive. You are gifted with magic. It is difficult to charm you into doing things against your will. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Wood Elf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Wood Elf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> Forest elves that are fleet of foot and use the terrain to their advantage to move stealthily and quickly. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially dexterious and wise. You can see in the dark and are very perceptive. It is difficult to charm you into doing things against your will and find you if you don't wish to be found. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Half-Elf" style="display:none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Who are you? </h3>
+                </div>
+                <div class="col-md-8">
+                    <h3> What's good to be a Half-Elf? </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> A being that is half-elf and half another race. They often make good diplomats because they are apart of two cultures. </p>
+                </div>
+                <div class="col-md-8">
+                    <p> You are especially charismatic and good at a variety of skills. You can see in the dark. It is difficult to charm you into doing things against your will. </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
   </div>
 </div>
