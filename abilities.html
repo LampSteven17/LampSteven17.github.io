@@ -103,34 +103,37 @@
 
 
         <script>
-          switch (document.getElementById("strVal").innerHTML){
+          var element = document.getElementById("strVal")
+          element.onchange = function(){
+            switch (element.innerHTML){
 
-            case '8':
-              document.getElementById("8s").style.display = "block";
-              break;
+              case '8':
+                document.getElementById("8s").style.display = "block";
+                break;
 
-            case '10':
-              document.getElementById("10s").style.display = "block";
-              break;
+              case '10':
+                document.getElementById("10s").style.display = "block";
+                break;
 
-            case '12':
-              document.getElementById("12s").style.display = "block";
-              break;
+              case '12':
+                document.getElementById("12s").style.display = "block";
+                break;
 
-            case '13':
-              document.getElementById("13s").style.display = "block";
-              break;
+              case '13':
+                document.getElementById("13s").style.display = "block";
+                break;
 
-            case '14':
-              document.getElementById("14s").style.display = "block";
-              break;
+              case '14':
+                document.getElementById("14s").style.display = "block";
+                break;
 
-            case '15':
-              document.getElementById("15s").style.display = "block";
-              break;
+              case '15':
+                document.getElementById("15s").style.display = "block";
+                break;
 
-            default:
-              break;//do nothing
+              default:
+                break;//do nothing
+            }
           }
         </script>
 
