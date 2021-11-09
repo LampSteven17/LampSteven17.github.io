@@ -10,12 +10,12 @@
       <div class="col-md-3">
           <img src="./assets/images/isoSTR.png" class="img-responsive" alt="">
           <select id="strVal" class="centered">
-              <option value="8"></option>
-              <option value="10"></option>
-              <option value="12"></option>
-              <option value="13"></option>
-              <option value="14"></option>
-              <option value="15" selected></option>
+              <option value='8'>8</option>
+              <option value='10'>10</option>
+              <option value='12'>12</option>
+              <option value='13'>13</option>
+              <option value='14'>14</option>
+              <option value='15' selected>15</option>
           </select>
       </div>
 
@@ -112,7 +112,7 @@
         <script>
           var element = document.getElementById("strVal")
           element.onchange = function(){
-            switch (element.innerHTML){
+            switch (element.value){
 
               case '8':
                 document.getElementById("8s").style.display = "block";
