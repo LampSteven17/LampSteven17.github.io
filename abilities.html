@@ -138,16 +138,16 @@
 
         <div class="row" id="8dex" style="display:none">
           <div class="col-md-6">
-            Can barely pick up a tomato, let alone throw it.
+            Can trip over a tomato.
           </div>
           <div class="col-md-3">
-            Goblin
+            Pre-pubescent Tenager
           </div>
         </div>
 
         <div class="row" id="10dex" style="display:none">
           <div class="col-md-6">
-            Can pick up a tomato.
+            Can jump on a tomato and get tomato paste everywhere.
           </div>
           <div class="col-md-3">
             Common Individual
@@ -156,7 +156,7 @@
 
         <div class="row" id="12dex" style="display:none">
           <div class="col-md-6">
-            A good arm, can throw a tomato on top of a 2 story building.
+            Can jump over one or two tomatoes.
           </div>
           <div class="col-md-3">
             Average Individual
@@ -165,7 +165,7 @@
 
         <div class="row" id="13dex" style="display:none">
           <div class="col-md-6">
-            A great arm, can pitch a tomato above 80mph.
+            Can jump over a hurdle made of tomatoes.
           </div>
           <div class="col-md-3">
             Atheltic Indivual
@@ -174,19 +174,19 @@
 
         <div class="row" id="14dex" style="display:none">
           <div class="col-md-6">
-            After benchpressing a cart of tomatoes, can bullet a tomato over a culdesac.
+            Can jump over a cart of tomatoes.
           </div>
           <div class="col-md-3">
-            Bodybuilder
+            Professional Athlete
           </div>
         </div>
 
         <div class="row" id="15dex" style="display:none">
           <div class="col-md-6">
-            After benchpressing a mountain of tomatoes, can throw said tomatoes over a litteral mountain.
+            Can backflip over a mountain of tomatoes.
           </div>
           <div class="col-md-3">
-            A God Who's Soul Purpose is Throwing Tomatoes
+            Olympians
           </div>
         </div>
 
@@ -204,44 +204,108 @@
 
         </script>
 
-
-
       </div>
 
     </div>
 
 
 
-    <script>
-      var $drops = $('.drop');
-
-      $drops.change(function () {
-      $drops.find("option").show();
-      $drops.each(function(index, el) {
-        var val = $(el).val();
-        if (val) {
-         var $other = $drops.not(this);
-         $other.find("option[value=" + $(el).val() + "]").hide();
-        }
-      });
-      });
-
-      $drops.addClass("centered");
-
-    </script>
-
-
     <div class="row">
-
       <div class="col-md-3">
           <img src="./assets/images/isoCON.png" class="img-responsive" alt="">
-          <h1 class="centered">32</h1>
+          <select id="conVal" class="drop">
+              <option value='8'>8</option>
+              <option value='10'>10</option>
+              <option value='12'>12</option>
+              <option value='13'>13</option>
+              <option value='14'>14</option>
+              <option value='15'>15</option>
+          </select>
       </div>
 
-      <div class="col-md-8">
-        <h3 class="h5">super fancy text about my nerdy joke placment holders 42 hahah so funnies</h3>
-      </div>
+      <div class="col-md-9">
 
+        <h3 class="h3">How spoiled of a tomato can you eat?</h3>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="h3">Charecteristic:</h3>
+          </div>
+          <div class="col-md-2">
+            <h3 class="h3">Example:</h3>
+          </div>
+        </div>
+
+
+        <div class="row" id="8con" style="display:none">
+          <div class="col-md-6">
+            Can eat a slightly underrip tomato.
+          </div>
+          <div class="col-md-3">
+            Every person i've ever dated
+          </div>
+        </div>
+
+        <div class="row" id="10con" style="display:none">
+          <div class="col-md-6">
+            If the tomato passes the sniff test you should fine.
+          </div>
+          <div class="col-md-3">
+            Common Individual
+          </div>
+        </div>
+
+        <div class="row" id="12con" style="display:none">
+          <div class="col-md-6">
+            The colors of the tomato are questionable but you should be fine.
+          </div>
+          <div class="col-md-3">
+            Average Individual
+          </div>
+        </div>
+
+        <div class="row" id="13con" style="display:none">
+          <div class="col-md-6">
+            You like a little fuzz on your tomatoes.
+          </div>
+          <div class="col-md-3">
+            Profesional Rotten Food Eater
+          </div>
+        </div>
+
+        <div class="row" id="14con" style="display:none">
+          <div class="col-md-6">
+            Can eat a tomato that you can no longer tell is red.
+          </div>
+          <div class="col-md-3">
+            Allligator
+          </div>
+        </div>
+
+        <div class="row" id="15con" style="display:none">
+          <div class="col-md-6">
+            Can eat dirt off the ground, who needs tomatoes.
+          </div>
+          <div class="col-md-3">
+            Dirt Worms
+          </div>
+        </div>
+
+
+        <script>
+          var elDEX = document.getElementById("conVal")
+          elDEX.onchange = function(){
+              document.getElementById("8con").style.display  = (elDEX.value == '8')  ? 'block' : 'none';
+              document.getElementById("10con").style.display = (elDEX.value == '10') ? 'block' : 'none';
+              document.getElementById("12con").style.display = (elDEX.value == '12') ? 'block' : 'none';
+              document.getElementById("13con").style.display = (elDEX.value == '13') ? 'block' : 'none';
+              document.getElementById("14con").style.display = (elDEX.value == '14') ? 'block' : 'none';
+              document.getElementById("15con").style.display = (elDEX.value == '15') ? 'block' : 'none';
+          }
+
+        </script>
+
+      </div>
     </div>
 
     <div class="row">
@@ -283,7 +347,23 @@
 
     </div>
 
+    <script>
+      var $drops = $('.drop');
 
+      $drops.change(function () {
+      $drops.find("option").show();
+      $drops.each(function(index, el) {
+        var val = $(el).val();
+        if (val) {
+         var $other = $drops.not(this);
+         $other.find("option[value=" + $(el).val() + "]").hide();
+        }
+      });
+      });
+
+      $drops.addClass("centered");
+
+    </script>
 
 
   </div>
