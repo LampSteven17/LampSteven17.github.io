@@ -103,7 +103,16 @@
 
 
         <script>
-            document.getElementById("8s").style.display = "block";
+          switch (document.getElementById("strVal").innerHTML){
+
+            case '8':
+              document.getElementById("8s").style.display = "block";
+              break;
+
+
+            default:
+              break;//do nothing
+          }
         </script>
 
 
