@@ -24,14 +24,16 @@
             hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
             hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
 
-            var hiddenDiv5 = document.getElementById("close");
-            var hiddenDiv6 = document.getElementById("ranged");
-            var hiddenDiv7 = document.getElementById("support");
-            var hiddenDiv8 = document.getElementById("jack");
-            hiddenDiv5.style.display = (this.value == "1") ? "block":"none";
-            hiddenDiv6.style.display = (this.value == "2") ? "block":"none";
-            hiddenDiv7.style.display = (this.value == "3") ? "block":"none";
-            hiddenDiv8.style.display = (this.value == "4") ? "block":"none";
+            var cantrip1 = document.getElementById("close");
+            var cantrip2 = document.getElementById("ranged");
+            var cantrip3 = document.getElementById("healer");
+            var cantrip4 = document.getElementById("stealth");
+            var cantrip5 = document.getElementById("all");
+            cantrip1.style.display = (this.value == "1") ? "block":"none";
+            cantrip2.style.display = (this.value == "2") ? "block":"none";
+            cantrip3.style.display = (this.value == "3") ? "block":"none";
+            cantrip4.style.display = (this.value == "4") ? "block":"none";
+            cantrip5.style.display = (this.value == "5") ? "block":"none";
         };
     </script>
 
@@ -164,18 +166,18 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> True Strike </p>
+                <p> Blade Ward </p>
             </div>
             <div class="col-md-8">
-                <p> True Strike is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Make yourself resistant to the next weapon attack you take. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Vicious Mockery </p>
+                <p> Thunder Clap </p>
             </div>
             <div class="col-md-8">
-                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Damage all of the enemies around you using thunder energy. </p>
             </div>
         </div>
     </div>
@@ -191,10 +193,83 @@
         </div>
         <div class="row">
             <div class="col-md-4">
+                <p> Vicious Mockery </p>
+            </div>
+            <div class="col-md-8">
+                <p> Mock your enemies to cause them mental harm and make it harder for them to hit your friends. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <p> Mage Hand </p>
             </div>
             <div class="col-md-8">
-                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> The ability to move objects with your mind from a safe distance. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="healer" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrip </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mage Hand </p>
+            </div>
+            <div class="col-md-8">
+                <p> The ability to move objects with your mind from a safe distance. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mending </p>
+            </div>
+            <div class="col-md-8">
+                <p> Magically fix broken objects. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="stealth" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrip </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Mage Hand </p>
+            </div>
+            <div class="col-md-8">
+                <p> The ability to move objects with your mind from a safe distance. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Message </p>
+            </div>
+            <div class="col-md-8">
+                <p> Send information to your friends when you are separated. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="all" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Cantrip </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
             </div>
         </div>
         <div class="row">
@@ -202,18 +277,7 @@
                 <p> Vicious Mockery </p>
             </div>
             <div class="col-md-8">
-                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="support" style="display:none;">
-        <div class="row">
-            <div class="col-md-4">
-                <h3> Cantrip </h3>
-            </div>
-            <div class="col-md-8">
-                <h3> Explanation </h3>
+                <p> Mock your enemies to cause them mental harm and make it harder for them to hit your friends. </p>
             </div>
         </div>
         <div class="row">
@@ -221,62 +285,9 @@
                 <p> Mage Hand </p>
             </div>
             <div class="col-md-8">
-                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> The ability to move objects with your mind from a safe distance. </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <p> Mending </p>
-            </div>
-            <div class="col-md-8">
-                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="jack" style="display:none;">
-        <div class="row">
-            <div class="col-md-4">
-                <h3> Cantrip </h3>
-            </div>
-            <div class="col-md-8">
-                <h3> Explanation </h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <p> Mending </p>
-            </div>
-            <div class="col-md-8">
-                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <p> Light </p>
-            </div>
-            <div class="col-md-8">
-                <p> Light is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4">
-        <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Amelia App</h3>
-        <p>June 2017</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Portland</h3>
-        <p>March 2017</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Denz for Nilon</h3>
-        <p>Jan 2017</p>
-      </div>
     </div>
 
     <!---  CHANGE WITHIN ME --->
