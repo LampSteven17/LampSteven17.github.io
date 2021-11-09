@@ -138,16 +138,16 @@
 
         <div class="row" id="8dex" style="display:none">
           <div class="col-md-6">
-            Can barely pick up a tomato, let alone throw it.
+            Can trip over a tomato.
           </div>
           <div class="col-md-3">
-            Goblin
+            Pre-pubescent Tenager
           </div>
         </div>
 
         <div class="row" id="10dex" style="display:none">
           <div class="col-md-6">
-            Can pick up a tomato.
+            Can jump on a tomato and get tomato paste everywhere.
           </div>
           <div class="col-md-3">
             Common Individual
@@ -156,7 +156,7 @@
 
         <div class="row" id="12dex" style="display:none">
           <div class="col-md-6">
-            A good arm, can throw a tomato on top of a 2 story building.
+            Can jump over one or two tomatoes.
           </div>
           <div class="col-md-3">
             Average Individual
@@ -165,7 +165,7 @@
 
         <div class="row" id="13dex" style="display:none">
           <div class="col-md-6">
-            A great arm, can pitch a tomato above 80mph.
+            Can jump over a hurdle made of tomatoes.
           </div>
           <div class="col-md-3">
             Atheltic Indivual
@@ -174,19 +174,19 @@
 
         <div class="row" id="14dex" style="display:none">
           <div class="col-md-6">
-            After benchpressing a cart of tomatoes, can bullet a tomato over a culdesac.
+            Can jump over a cart of tomatoes.
           </div>
           <div class="col-md-3">
-            Bodybuilder
+            Professional Athlete
           </div>
         </div>
 
         <div class="row" id="15dex" style="display:none">
           <div class="col-md-6">
-            After benchpressing a mountain of tomatoes, can throw said tomatoes over a litteral mountain.
+            Can backflip over a mountain of tomatoes.
           </div>
           <div class="col-md-3">
-            A God Who's Soul Purpose is Throwing Tomatoes
+            Olympians
           </div>
         </div>
 
@@ -204,31 +204,10 @@
 
         </script>
 
-
-
       </div>
 
     </div>
 
-
-
-    <script>
-      var $drops = $('.drop');
-
-      $drops.change(function () {
-      $drops.find("option").show();
-      $drops.each(function(index, el) {
-        var val = $(el).val();
-        if (val) {
-         var $other = $drops.not(this);
-         $other.find("option[value=" + $(el).val() + "]").hide();
-        }
-      });
-      });
-
-      $drops.addClass("centered");
-
-    </script>
 
 
     <div class="row">
@@ -283,7 +262,23 @@
 
     </div>
 
+    <script>
+      var $drops = $('.drop');
 
+      $drops.change(function () {
+      $drops.find("option").show();
+      $drops.each(function(index, el) {
+        var val = $(el).val();
+        if (val) {
+         var $other = $drops.not(this);
+         $other.find("option[value=" + $(el).val() + "]").hide();
+        }
+      });
+      });
+
+      $drops.addClass("centered");
+
+    </script>
 
 
   </div>
