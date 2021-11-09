@@ -10,21 +10,24 @@
             <option value="0" selected>No role selected</option>
             <option value="1">Close Combat</option>
             <option value="2">Ranged Combat</option>
-            <option value="3">Support</option>
-            <option value="4">Jack of All Trades</option>
+            <option value="3">Healer</option>
+            <option value="4">Stealth</option>
+            <option value="5">Jack of All Trades</option>
         </select>
 
     <script>
         var elem = document.getElementById("selection");
         elem.onchange = function(){
-            var hiddenDiv1 = document.getElementById("closeSpell");
-            var hiddenDiv2 = document.getElementById("rangedSpell");
-            var hiddenDiv3 = document.getElementById("supportSpell");
-            var hiddenDiv4 = document.getElementById("jackSpell");
-            hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
-            hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
-            hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
-            hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+            var spell1 = document.getElementById("closeSpell");
+            var spell2 = document.getElementById("rangedSpell");
+            var spell3 = document.getElementById("healSpell");
+            var spell4 = document.getElementById("stealthSpell");
+            var spell5 = document.getElementById("allSpell");
+            spell1.style.display = (this.value == "1") ? "block":"none";
+            spell2.style.display = (this.value == "2") ? "block":"none";
+            spell3.style.display = (this.value == "3") ? "block":"none";
+            spell4.style.display = (this.value == "4") ? "block":"none";
+            spell5.style.display = (this.value == "5") ? "block":"none";
 
             var cantrip1 = document.getElementById("close");
             var cantrip2 = document.getElementById("ranged");
@@ -55,18 +58,34 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> True Strike </p>
+                <p> Bane </p>
             </div>
             <div class="col-md-8">
-                <p> True Strike is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Curse your enemies to make it harder for them to hit you and avoid beinf hit by your friends. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Vicious Mockery </p>
+                <p> Earth Tremor </p>
             </div>
             <div class="col-md-8">
-                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Knock your enemies prone and make it difficult for them to reach you. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Thunderwave </p>
+            </div>
+            <div class="col-md-8">
+                <p> Damage all of your enemies around you using thunder energy and push them backwards. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Color Spray </p>
+            </div>
+            <div class="col-md-8">
+                <p> Blind your enemies to make it harder for them to attack. </p>
             </div>
         </div>
     </div>
@@ -82,23 +101,39 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Mage Hand </p>
+                <p> Bane </p>
             </div>
             <div class="col-md-8">
-                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Curse your enemies to make it harder for them to hit you and avoid beinf hit by your friends. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Vicious Mockery </p>
+                <p> Dissonant Whispers </p>
             </div>
             <div class="col-md-8">
-                <p> Vicious Mockery is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Mentally damage your enemies and make them frightened of you so that they must flee. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Sleep </p>
+            </div>
+            <div class="col-md-8">
+                <p> Put your enemies to sleep. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Fairy Fire </p>
+            </div>
+            <div class="col-md-8">
+                <p> Make it easier for your friends to your enemies and reveal invisible objects and creatures. </p>
             </div>
         </div>
     </div>
 
-    <div id="supportSpell" style="display:none;">
+    <div id="healSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -109,23 +144,39 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Mage Hand </p>
+                <p> Cure Wounds </p>
             </div>
             <div class="col-md-8">
-                <p> Mage Hand is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Heal your friends for a significant amount of damage. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Mending </p>
+                <p> Healing Word </p>
             </div>
             <div class="col-md-8">
-                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Heal your friends are a small amount of damage. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Feather Fall </p>
+            </div>
+            <div class="col-md-8">
+                <p> Cause a creature to float down gently as they fall from a high place. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Fairy Fire </p>
+            </div>
+            <div class="col-md-8">
+                <p> Make it easier for your friends to your enemies and reveal invisible objects and creatures. </p>
             </div>
         </div>
     </div>
 
-    <div id="jackSpell" style="display:none;">
+    <div id="stealthSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -136,18 +187,77 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Mending </p>
+                <p> Bane </p>
             </div>
             <div class="col-md-8">
-                <p> Mending is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Curse your enemies to make it harder for them to hit you and avoid beinf hit by your friends. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p> Light </p>
+                <p> Comprehend Languages </p>
             </div>
             <div class="col-md-8">
-                <p> Light is good because whatever but i want to fill out the row with text so that i can see how wide the div is i guess i could give the div a border but it's too late now hopefully this is long enough </p>
+                <p> Understanding a language that you do not know. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Identify </p>
+            </div>
+            <div class="col-md-8">
+                <p> Magically understand what an item is or does. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Sleep </p>
+            </div>
+            <div class="col-md-8">
+                <p> Put your enemies to sleep. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="allSpell" style="display:none;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Spell </h3>
+            </div>
+            <div class="col-md-8">
+                <h3> Explanation </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Charm Person </p>
+            </div>
+            <div class="col-md-8">
+                <p> Magically cause a creature to regard you as a friend.  </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Healing Word </p>
+            </div>
+            <div class="col-md-8">
+                <p> Heal your friends are a small amount of damage. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Sleep </p>
+            </div>
+            <div class="col-md-8">
+                <p> Put your enemies to sleep. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Tasha's Hideous Laughter </p>
+            </div>
+            <div class="col-md-8">
+                <p> Stun an enemy by causing them to laugh uncontrollably. </p>
             </div>
         </div>
     </div>
