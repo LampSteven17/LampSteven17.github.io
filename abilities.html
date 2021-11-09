@@ -10,12 +10,12 @@
       <div class="col-md-3">
           <img src="./assets/images/isoSTR.png" class="img-responsive" alt="">
           <select id="strVal" class="centered">
-              <option value='8str'>8</option>
-              <option value='10str'>10</option>
-              <option value='12str'>12</option>
-              <option value='13str'>13</option>
-              <option value='14str'>14</option>
-              <option value='15str' selected>15</option>
+              <option value='8'>8</option>
+              <option value='10'>10</option>
+              <option value='12'>12</option>
+              <option value='13'>13</option>
+              <option value='14'>14</option>
+              <option value='15' selected>15</option>
           </select>
       </div>
 
@@ -91,12 +91,12 @@
         <script>
           var element = document.getElementById("strVal")
           element.onchange = function(){
-              document.getElementById("8str").style.display = (element.value == '8str') ? 'block' : 'none';
-              document.getElementById("10str").style.display = (element.value == '10str') ? 'block' : 'none';
-              document.getElementById("12str").style.display = (element.value == '12str') ? 'block' : 'none';
-              document.getElementById("13str").style.display = (element.value == '13str') ? 'block' : 'none';
-              document.getElementById("14str").style.display = (element.value == '14str') ? 'block' : 'none';
-              document.getElementById("15str").style.display = (element.value == '15str') ? 'block' : 'none';
+              document.getElementById("8str").style.display = (element.value == '8') ? 'block' : 'none';
+              document.getElementById("10str").style.display = (element.value == '10') ? 'block' : 'none';
+              document.getElementById("12str").style.display = (element.value == '12') ? 'block' : 'none';
+              document.getElementById("13str").style.display = (element.value == '13') ? 'block' : 'none';
+              document.getElementById("14str").style.display = (element.value == '14') ? 'block' : 'none';
+              document.getElementById("15str").style.display = (element.value == '15') ? 'block' : 'none';
           }
 
         </script>
@@ -192,14 +192,14 @@
 
 
         <script>
-          var element = document.getElementById("dexVal")
-          element.onchange = function(){
-              document.getElementById("8dex").style.display = (element.value == '8') ? 'block' : 'none';
-              document.getElementById("10dex").style.display = (element.value == '10') ? 'block' : 'none';
-              document.getElementById("12dex").style.display = (element.value == '12') ? 'block' : 'none';
-              document.getElementById("13dex").style.display = (element.value == '13') ? 'block' : 'none';
-              document.getElementById("14dex").style.display = (element.value == '14') ? 'block' : 'none';
-              document.getElementById("15dex").style.display = (element.value == '15') ? 'block' : 'none';
+          var elDEX = document.getElementById("dexVal")
+          elDEX.onchange = function(){
+              document.getElementById("8dex").style.display = (elDEX.value == '8') ? 'block' : 'none';
+              document.getElementById("10dex").style.display = (elDEX.value == '10') ? 'block' : 'none';
+              document.getElementById("12dex").style.display = (elDEX.value == '12') ? 'block' : 'none';
+              document.getElementById("13dex").style.display = (elDEX.value == '13') ? 'block' : 'none';
+              document.getElementById("14dex").style.display = (elDEX.value == '14') ? 'block' : 'none';
+              document.getElementById("15dex").style.display = (elDEX.value == '15') ? 'block' : 'none';
           }
 
         </script>
