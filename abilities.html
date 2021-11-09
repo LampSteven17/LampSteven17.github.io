@@ -9,7 +9,7 @@
 
       <div class="col-md-3">
           <img src="./assets/images/isoSTR.png" class="img-responsive" alt="">
-          <select id="strVal" class="centered">
+          <select id="strVal" class="drop">
               <option value='8'>8</option>
               <option value='10'>10</option>
               <option value='12'>12</option>
@@ -112,7 +112,7 @@
     <div class="row">
       <div class="col-md-3">
           <img src="./assets/images/isoDEX.png" class="img-responsive" alt="">
-          <select id="dexVal" class="centered">
+          <select id="dexVal" class="drop">
               <option value='8'>8</option>
               <option value='10'>10</option>
               <option value='12'>12</option>
@@ -194,7 +194,7 @@
         <script>
           var elDEX = document.getElementById("dexVal")
           elDEX.onchange = function(){
-              document.getElementById("8dex").style.display = (elDEX.value == '8') ? 'block' : 'none';
+              document.getElementById("8dex").style.display  = (elDEX.value == '8')  ? 'block' : 'none';
               document.getElementById("10dex").style.display = (elDEX.value == '10') ? 'block' : 'none';
               document.getElementById("12dex").style.display = (elDEX.value == '12') ? 'block' : 'none';
               document.getElementById("13dex").style.display = (elDEX.value == '13') ? 'block' : 'none';
@@ -209,6 +209,25 @@
       </div>
 
     </div>
+
+
+
+    <script>
+      var $drops = $('.drop');
+
+      $drops.change(function () {
+      $drops.find("option").show();
+      $drops.each(function(index, el) {
+        var val = $(el).val();
+        if (val) {
+         var $other = $drops.not(this);
+         $other.find("option[value=" + $(el).val() + "]").hide();
+        }
+      });
+      });
+
+
+    </script>
 
 
     <div class="row">
