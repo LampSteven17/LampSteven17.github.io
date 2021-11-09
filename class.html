@@ -6,10 +6,79 @@
     <h2>What is a class?</h2>
     <p style = "margin-bottom:1cm;">Your details your character's abilities that they have and will gain. It shows what you can do in and out of combat to help your team.</p>
     <h2>Please choose a class:</h2>
-    
 
+    <div class = "row">
+      <div class = "col-md-2">
+        <label for="selection_class">Choose a class: </label>
+          <select name = "selection_class" id = "selection_class">
+            <option value="0" selected> --No class selected--</option>
+            <option value="1"> Artificer </option>
+            <option value="2"> Barbarian </option>
+            <option value="3"> Bard </option>
+            <option value="4"> Cleric </option>
+            <option value="5"> Druid </option>
+            <option value="6"> Fighter </option>
+            <option value="7"> Monk </option>
+            <option value="8"> Paladin </option>
+            <option value="9"> Ranger </option>
+            <option value="10"> Rogue </option>
+            <option value="11"> Sorcerer </option>
+            <option value="12"> Warlock </option>
+            <option value="13"> Wizard </option>
+          </select>
 
-      <p> </p>
+        <script>
+          var elem = document.getElementById("selection_class");
+          elem.onchange = function(){
+            var class1 = document.getElementById("Artificer");
+            var class2 = document.getElementById("Barbarian");
+            var class3 = document.getElementById("Bard");
+            var class4 = document.getElementById("Cleric");
+            var class5 = document.getElementById("Druid");
+            var class6 = document.getElementById("Fighter");
+            var class7 = document.getElementById("Monk");
+            var class8 = document.getElementById("Paladin");
+            var class9 = document.getElementById("Ranger");
+            var class10 = document.getElementById("Rogue");
+            var class11 = document.getElementById("Sorcerer");
+            var class12 = document.getElementById("Warlock");
+            var class13 = document.getElementById("Wizard");
+            class1.style.display = (this.value == "1") ? "block":"none";
+            class2.style.display = (this.value == "2") ? "block":"none";
+            class3.style.display = (this.value == "3") ? "block":"none";
+            class4.style.display = (this.value == "4") ? "block":"none";
+            class5.style.display = (this.value == "5") ? "block":"none";
+            class6.style.display = (this.value == "6") ? "block":"none";
+            class7.style.display = (this.value == "7") ? "block":"none";
+            class8.style.display = (this.value == "8") ? "block":"none";
+            class9.style.display = (this.value == "9") ? "block":"none";
+            class10.style.display = (this.value == "10") ? "block":"none";
+            class11.style.display = (this.value == "11") ? "block":"none";
+            class12.style.display = (this.value == "12") ? "block":"none";
+            class13.style.display = (this.value == "13") ? "block":"none";
+          };
+        </script>
+
+        <div id="Artificer" style="display:none;">
+          <div class="row">
+            <div class="col-md-4">
+              <h3> What is an Artificer? </h3>
+            </div>
+            <div class="col-md-8">
+              <h3> Famous Artificer examples: </h3>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <p>A warrior that combines magic and technology to support their teammates.</p>
+              </div>
+              <div class="col-md-8">
+                <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank" rel="noopener noreferrer">Iron Man</a>
+                <a href="https://en.wikipedia.org/wiki/Dr._Heinz_Doofenshmirtz" target="_blank" rel="noopener noreferrer">Dr. Heinz Doofenschmirtz</a>
+                <a href="https://en.wikipedia.org/wiki/Home_Alone_(franchise)" target="_blank" rel="noopener noreferrer">Kevin McCallister</a>
+              </div>
+            </div>
+          <div>
+
       </div>
     </div>
   </div>
