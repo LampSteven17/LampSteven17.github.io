@@ -112,35 +112,12 @@
         <script>
           var element = document.getElementById("strVal")
           element.onchange = function(){
-            switch (element.value){
-
-              case '8':
-                document.getElementById("8s").style.display = (element.value == '8') ? 'block' : 'none';
-                break;
-
-              case '10':
-                document.getElementById("10s").style.display = (element.value == '10') ? 'block' : 'none';
-                break;
-
-              case '12':
-                document.getElementById("12s").style.display = (element.value == '12') ? 'block' : 'none';
-                break;
-
-              case '13':
-                document.getElementById("13s").style.display = (element.value == '13') ? 'block' : 'none';
-                break;
-
-              case '14':
-                document.getElementById("14s").style.display = (element.value == '14') ? 'block' : 'none';
-                break;
-
-              case '15':
-                document.getElementById("15s").style.display = (element.value == '15') ? 'block' : 'none';
-                break;
-
-              default:
-                break;//do nothing
-            }
+              document.getElementById("8s").style.display = (element.value == '8') ? 'block' : 'none';
+              document.getElementById("10s").style.display = (element.value == '10') ? 'block' : 'none';
+              document.getElementById("12s").style.display = (element.value == '12') ? 'block' : 'none';
+              document.getElementById("13s").style.display = (element.value == '13') ? 'block' : 'none';
+              document.getElementById("14s").style.display = (element.value == '14') ? 'block' : 'none';
+              document.getElementById("15s").style.display = (element.value == '15') ? 'block' : 'none';
           }
 
         </script>
