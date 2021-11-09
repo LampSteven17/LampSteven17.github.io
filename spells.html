@@ -15,23 +15,32 @@
     <script>
         var elem = document.getElementById("selection");
         elem.onchange = function(){
-            var hiddenDiv1 = document.getElementById("close");
-            var hiddenDiv2 = document.getElementById("ranged");
-            var hiddenDiv3 = document.getElementById("support");
-            var hiddenDiv4 = document.getElementById("jack");
+            var hiddenDiv1 = document.getElementById("closeSpell");
+            var hiddenDiv2 = document.getElementById("rangedSpell");
+            var hiddenDiv3 = document.getElementById("supportSpell");
+            var hiddenDiv4 = document.getElementById("jackSpell");
             hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
             hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
             hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
             hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+
+            var hiddenDiv5 = document.getElementById("close");
+            var hiddenDiv6 = document.getElementById("ranged");
+            var hiddenDiv7 = document.getElementById("support");
+            var hiddenDiv8 = document.getElementById("jack");
+            hiddenDiv5.style.display = (this.value == "1") ? "block":"none";
+            hiddenDiv6.style.display = (this.value == "2") ? "block":"none";
+            hiddenDiv7.style.display = (this.value == "3") ? "block":"none";
+            hiddenDiv8.style.display = (this.value == "4") ? "block":"none";
         };
     </script>
 
     <h2>What is a spell?</h2>
-    <p style="margin-bottom:1cm;">A spell is an incantation using words, gestures, and tools to affect the world in a magical way. At level 1, you can cast two first-level spells per day. These spells have small effects, such as speaking with animals.</p>
+    <p style="margin-bottom:0.5cm;">A spell is an incantation using words, gestures, and tools to affect the world in a magical way. At level 1, you can cast two first-level spells per day. These spells have small effects, such as speaking with animals.</p>
 
     <h2 style="margin-bottom:1px">Here are your recommended spells:</h2>
 
-    <div id="close" style="display:none;">
+    <div id="closeSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -58,7 +67,7 @@
         </div>
     </div>
 
-    <div id="ranged" style="display:none;">
+    <div id="rangedSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -85,7 +94,7 @@
         </div>
     </div>
 
-    <div id="support" style="display:none;">
+    <div id="supportSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -112,7 +121,7 @@
         </div>
     </div>
 
-    <div id="jack" style="display:none;">
+    <div id="jackSpell" style="display:none;">
         <div class="row">
             <div class="col-md-4">
                 <h3> Spell </h3>
@@ -140,7 +149,7 @@
     </div>
 
     <h2>What is a cantrip?</h2>
-    <p style="margin-bottom:1cm;">A spell that you can use as many times as you want on command.</p>
+    <p style="margin-bottom:0.5cm;">A spell that you can use as many times as you want on command.</p>
 
     <h2 style="margin-bottom:1px">Here are your recommended cantrips:</h2>
 
