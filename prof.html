@@ -569,7 +569,21 @@
 
     </script>
 
+    <script>
+      var $drops = $('.drop');
 
+      $drops.change(function () {
+      $drops.find("option").show();
+      $drops.each(function(index, el) {
+        var val = $(el).val();
+        if (val) {
+         var $other = $drops.not(this);
+         $other.find("option[value=" + $(el).val() + "]").hide();
+        }
+      });
+      });
+
+    </script>
 
 
     <!---  CHANGE WITHIN ME --->
