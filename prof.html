@@ -196,6 +196,381 @@
 
     </script>
 
+    <div class="row">
+      <h3> Proficiency 2: </h3>
+        <select id="prof2" class="drop">
+          <option value = "Acrobatics">Acrobatics</option>
+          <option value = "Animal Handling">Animal Handling</option>
+          <option value = "Arcana">Arcana</option>
+          <option value = "Athletics">Athletics</option>
+          <option value = "Deception">Deception</option>
+          <option value = "History">History</option>
+          <option value = "Insight">Insight</option>
+          <option value = "Intimidation">Intimidation</option>
+          <option value = "Investigation">Investigation</option>
+          <option value = "Medicine">Medicine</option>
+          <option value = "Nature">Nature</option>
+          <option value = "Perception">Perception</option>
+          <option value = "Performance">Performance</option>
+          <option value = "Persuasion">Persuasion</option>
+          <option value = "Religion">Religion</option>
+          <option value = "Sleight of Hand">Sleight of Hand</option>
+          <option value = "Stealth">Stealth</option>
+          <option value = "Survival">Survival</option>
+        </select>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <h4>Explanation</h4>
+      </div>
+      <div class="row" id="Prof2AcroExp" style="display:none">
+        <p> You are good at physical activities based on speed or dexterity.</p>
+      </div>
+      <div class="row" id="Prof2AnimExp" style="display:none">
+        <p> You work well with animals and they generally like you.</p>
+      </div>
+      <div class="row" id="Prof2AthlExp" style="display:none">
+        <p> You are good at physical activities based on strength.</p>
+      </div>
+      <div class="row" id="Prof2ArcaExp" style="display:none">
+        <p> You know a lot about magical items and spells.</p>
+      </div>
+      <div class="row" id="Prof2DeceExp" style="display:none">
+        <p>You are a good liar.</p>
+      </div>
+      <div class="row" id="Prof2HistExp" style="display:none">
+        <p> You know a lot about the past.</p>
+      </div>
+      <div class="row" id="Prof2InsiExp" style="display:none">
+        <p> You easily know what others are thinking and feeling.</p>
+      </div>
+      <div class="row" id="Prof2IntiExp" style="display:none">
+        <p> You can convince others to do what you want through hostile acts.</p>
+      </div>
+      <div class="row" id="Prof2InveExp" style="display:none">
+        <p> You notice small details when searching an area and can deduce their meaning.</p>
+      </div>
+      <div class="row" id="Prof2MediExp" style="display:none">
+        <p> You know about the body and how it can be cared for.</p>
+      </div>
+      <div class="row" id="Prof2NatuExp" style="display:none">
+        <p> You know a lot about plants, animals, and the land.</p>
+      </div>
+      <div class="row" id="Prof2PercExp" style="display:none">
+        <p> You sense things in your environment quickly.</p>
+      </div>
+      <div class="row" id="Prof2PerfExp" style="display:none">
+        <p> You sing, dance, or play an instrument well.</p>
+      </div>
+      <div class="row" id="Prof2PersExp" style="display:none">
+        <p> You can convince others to do what you want through logical or emotional arguments.</p>
+      </div>
+      <div class="row" id="Prof2ReliExp" style="display:none">
+        <p> You know a lot about the gods and their teachings.</p>
+      </div>
+      <div class="row" id="Prof2SligExp" style="display:none">
+        <p> You are good at concealing your physical deception.</p>
+      </div>
+      <div class="row" id="Prof2SteaExp" style="display:none">
+        <p> You are good at concealing your person from view.</p>
+      </div>
+      <div class="row" id="Prof2SurvExp" style="display:none">
+        <p> You know how to navigate and survive in the wilderness.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <h4>Example</h4>
+      </div>
+      <div class="row" id="Prof2AcroExa" style="display:none">
+        <p>Jumping from one rooftop to another.</p>
+      </div>
+      <div class="row" id="Prof2AnimExa" style="display:none">
+        <p> Riding a horse.</p>
+      </div>
+      <div class="row" id="Prof2ArcaExa" style="display:none">
+        <p> Identifying a magical scroll.</p>
+      </div>
+      <div class="row" id="Prof2AthlExa" style="display:none">
+        <p> Swimming across a lake.</p>
+      </div>
+      <div class="row" id="Prof2DeceExa" style="display:none">
+        <p> Presenting a guard with a fake name and identity.</p>
+      </div>
+      <div class="row" id="Prof2HistExa" style="display:none">
+        <p> Knowing who was king thousands of years ago..</p>
+      </div>
+      <div class="row" id="Prof2InsiExa" style="display:none">
+        <p> Knowing if someone is lying.</p>
+      </div>
+      <div class="row" id="Prof2IntiExa" style="display:none">
+        <p> Scaring off a group of bandits by threatening to beat them up.</p>
+      </div>
+      <div class="row" id="Prof2InveExa" style="display:none">
+        <p> Finding a hidden door.</p>
+      </div>
+      <div class="row" id="Prof2MediExa" style="display:none">
+        <p> Applying first aid.</p>
+      </div>
+      <div class="row" id="Prof2NatuExa" style="display:none">
+        <p> Knowing if a plant is poisonous.</p>
+      </div>
+      <div class="row" id="Prof2PercExa" style="display:none">
+        <p> Spotting an enemy patrol.</p>
+      </div>
+      <div class="row" id="Prof2PerfExa" style="display:none">
+        <p> Play the lute for an audience at a tavern.</p>
+      </div>
+      <div class="row" id="Prof2PersExa" style="display:none">
+        <p> Convincing your employer to give you more money.</p>
+      </div>
+      <div class="row" id="Prof2ReliExa" style="display:none">
+        <p> Identifying a religious symbol.</p>
+      </div>
+      <div class="row" id="Prof2SligExa" style="display:none">
+        <p> Picking someone's pocket.</p>
+      </div>
+      <div class="row" id="Prof2SteaExa" style="display:none">
+        <p>Hiding from a patrol of enemies.</p>
+      </div>
+      <div class="row" id="Prof2SurvExa" style="display:none">
+        <p> Finding a forest path.</p>
+      </div>
+    </div>
+
+    <script>
+      var proficiency2 = document.getElementById("prof2")
+      proficiency2.onchange = function(){
+        document.getElementById("Prof2AcroExp").style.display = (proficiency2.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementById("Prof2AnimExp").style.display = (proficiency2.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementById("Prof2ArcaExp").style.display = (proficiency2.value == 'Arcana') ? 'block' : 'none';
+        document.getElementById("Prof2AthlExp").style.display = (proficiency2.value == 'Athletics') ? 'block' : 'none';
+        document.getElementById("Prof2DeceExp").style.display = (proficiency2.value == 'Deception') ? 'block' : 'none';
+        document.getElementById("Prof2HistExp").style.display = (proficiency2.value == 'History') ? 'block' : 'none';
+        document.getElementById("Prof2InsiExp").style.display = (proficiency2.value == 'Insight') ? 'block' : 'none';
+        document.getElementById("Prof2IntiExp").style.display = (proficiency2.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementById("Prof2InveExp").style.display = (proficiency2.value == 'Investigation') ? 'block' : 'none';
+        document.getElementById("Prof2MediExp").style.display = (proficiency2.value == 'Medicine') ? 'block' : 'none';
+        document.getElementById("Prof2NatuExp").style.display = (proficiency2.value == 'Nature') ? 'block' : 'none';
+        document.getElementById("Prof2PercExp").style.display = (proficiency2.value == 'Perception') ? 'block' : 'none';
+        document.getElementById("Prof2PerfExp").style.display = (proficiency2.value == 'Performance') ? 'block' : 'none';
+        document.getElementById("Prof2PersExp").style.display = (proficiency2.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementById("Prof2ReliExp").style.display = (proficiency2.value == 'Religion') ? 'block' : 'none';
+        document.getElementById("Prof2SligExp").style.display = (proficiency2.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementById("Prof2SteaExp").style.display = (proficiency2.value == 'Stealth') ? 'block' : 'none';
+        document.getElementById("Prof2SurvExp").style.display = (proficiency2.value == 'Survival') ? 'block' : 'none';
+        document.getElementById("Prof2AcroExa").style.display = (proficiency2.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementById("Prof2AnimExa").style.display = (proficiency2.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementById("Prof2ArcaExa").style.display = (proficiency2.value == 'Arcana') ? 'block' : 'none';
+        document.getElementById("Prof2AthlExa").style.display = (proficiency2.value == 'Athletics') ? 'block' : 'none';
+        document.getElementById("Prof2DeceExa").style.display = (proficiency2.value == 'Deception') ? 'block' : 'none';
+        document.getElementById("Prof2HistExa").style.display = (proficiency2.value == 'History') ? 'block' : 'none';
+        document.getElementById("Prof2InsiExa").style.display = (proficiency2.value == 'Insight') ? 'block' : 'none';
+        document.getElementById("Prof2IntiExa").style.display = (proficiency2.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementById("Prof2InveExa").style.display = (proficiency2.value == 'Investigation') ? 'block' : 'none';
+        document.getElementById("Prof2MediExa").style.display = (proficiency2.value == 'Medicine') ? 'block' : 'none';
+        document.getElementById("Prof2NatuExa").style.display = (proficiency2.value == 'Nature') ? 'block' : 'none';
+        document.getElementById("Prof2PercExa").style.display = (proficiency2.value == 'Perception') ? 'block' : 'none';
+        document.getElementById("Prof2PerfExa").style.display = (proficiency2.value == 'Performance') ? 'block' : 'none';
+        document.getElementById("Prof2PersExa").style.display = (proficiency2.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementById("Prof2ReliExa").style.display = (proficiency2.value == 'Religion') ? 'block' : 'none';
+        document.getElementById("Prof2SligExa").style.display = (proficiency2.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementById("Prof2SteaExa").style.display = (proficiency2.value == 'Stealth') ? 'block' : 'none';
+        document.getElementById("Prof2SurvExa").style.display = (proficiency2.value == 'Survival') ? 'block' : 'none';
+      }
+
+    </script>
+
+
+    <div class="row">
+      <h3> Proficiency 3: </h3>
+        <select id="prof3" class="drop">
+          <option value = "Acrobatics">Acrobatics</option>
+          <option value = "Animal Handling">Animal Handling</option>
+          <option value = "Arcana">Arcana</option>
+          <option value = "Athletics">Athletics</option>
+          <option value = "Deception">Deception</option>
+          <option value = "History">History</option>
+          <option value = "Insight">Insight</option>
+          <option value = "Intimidation">Intimidation</option>
+          <option value = "Investigation">Investigation</option>
+          <option value = "Medicine">Medicine</option>
+          <option value = "Nature">Nature</option>
+          <option value = "Perception">Perception</option>
+          <option value = "Performance">Performance</option>
+          <option value = "Persuasion">Persuasion</option>
+          <option value = "Religion">Religion</option>
+          <option value = "Sleight of Hand">Sleight of Hand</option>
+          <option value = "Stealth">Stealth</option>
+          <option value = "Survival">Survival</option>
+        </select>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <h4>Explanation</h4>
+      </div>
+      <div class="row" id="Prof3AcroExp" style="display:none">
+        <p> You are good at physical activities based on speed or dexterity.</p>
+      </div>
+      <div class="row" id="Prof3AnimExp" style="display:none">
+        <p> You work well with animals and they generally like you.</p>
+      </div>
+      <div class="row" id="Prof3AthlExp" style="display:none">
+        <p> You are good at physical activities based on strength.</p>
+      </div>
+      <div class="row" id="Prof3ArcaExp" style="display:none">
+        <p> You know a lot about magical items and spells.</p>
+      </div>
+      <div class="row" id="Prof3DeceExp" style="display:none">
+        <p>You are a good liar.</p>
+      </div>
+      <div class="row" id="Prof3HistExp" style="display:none">
+        <p> You know a lot about the past.</p>
+      </div>
+      <div class="row" id="Prof3InsiExp" style="display:none">
+        <p> You easily know what others are thinking and feeling.</p>
+      </div>
+      <div class="row" id="Prof3IntiExp" style="display:none">
+        <p> You can convince others to do what you want through hostile acts.</p>
+      </div>
+      <div class="row" id="Prof3InveExp" style="display:none">
+        <p> You notice small details when searching an area and can deduce their meaning.</p>
+      </div>
+      <div class="row" id="Prof3MediExp" style="display:none">
+        <p> You know about the body and how it can be cared for.</p>
+      </div>
+      <div class="row" id="Prof3NatuExp" style="display:none">
+        <p> You know a lot about plants, animals, and the land.</p>
+      </div>
+      <div class="row" id="Prof3PercExp" style="display:none">
+        <p> You sense things in your environment quickly.</p>
+      </div>
+      <div class="row" id="Prof3PerfExp" style="display:none">
+        <p> You sing, dance, or play an instrument well.</p>
+      </div>
+      <div class="row" id="Prof3PersExp" style="display:none">
+        <p> You can convince others to do what you want through logical or emotional arguments.</p>
+      </div>
+      <div class="row" id="Prof3ReliExp" style="display:none">
+        <p> You know a lot about the gods and their teachings.</p>
+      </div>
+      <div class="row" id="Prof3SligExp" style="display:none">
+        <p> You are good at concealing your physical deception.</p>
+      </div>
+      <div class="row" id="Prof3SteaExp" style="display:none">
+        <p> You are good at concealing your person from view.</p>
+      </div>
+      <div class="row" id="Prof3SurvExp" style="display:none">
+        <p> You know how to navigate and survive in the wilderness.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <h4>Example</h4>
+      </div>
+      <div class="row" id="Prof3AcroExa" style="display:none">
+        <p>Jumping from one rooftop to another.</p>
+      </div>
+      <div class="row" id="Prof3AnimExa" style="display:none">
+        <p> Riding a horse.</p>
+      </div>
+      <div class="row" id="Prof3ArcaExa" style="display:none">
+        <p> Identifying a magical scroll.</p>
+      </div>
+      <div class="row" id="Prof3AthlExa" style="display:none">
+        <p> Swimming across a lake.</p>
+      </div>
+      <div class="row" id="Prof3DeceExa" style="display:none">
+        <p> Presenting a guard with a fake name and identity.</p>
+      </div>
+      <div class="row" id="Prof3HistExa" style="display:none">
+        <p> Knowing who was king thousands of years ago..</p>
+      </div>
+      <div class="row" id="Prof3InsiExa" style="display:none">
+        <p> Knowing if someone is lying.</p>
+      </div>
+      <div class="row" id="Prof3IntiExa" style="display:none">
+        <p> Scaring off a group of bandits by threatening to beat them up.</p>
+      </div>
+      <div class="row" id="Prof3InveExa" style="display:none">
+        <p> Finding a hidden door.</p>
+      </div>
+      <div class="row" id="Prof3MediExa" style="display:none">
+        <p> Applying first aid.</p>
+      </div>
+      <div class="row" id="Prof3NatuExa" style="display:none">
+        <p> Knowing if a plant is poisonous.</p>
+      </div>
+      <div class="row" id="Prof3PercExa" style="display:none">
+        <p> Spotting an enemy patrol.</p>
+      </div>
+      <div class="row" id="Prof3PerfExa" style="display:none">
+        <p> Play the lute for an audience at a tavern.</p>
+      </div>
+      <div class="row" id="Prof3PersExa" style="display:none">
+        <p> Convincing your employer to give you more money.</p>
+      </div>
+      <div class="row" id="Prof3ReliExa" style="display:none">
+        <p> Identifying a religious symbol.</p>
+      </div>
+      <div class="row" id="Prof3SligExa" style="display:none">
+        <p> Picking someone's pocket.</p>
+      </div>
+      <div class="row" id="Prof3SteaExa" style="display:none">
+        <p>Hiding from a patrol of enemies.</p>
+      </div>
+      <div class="row" id="Prof3SurvExa" style="display:none">
+        <p> Finding a forest path.</p>
+      </div>
+    </div>
+
+    <script>
+      var proficiency3 = document.getElementById("prof3")
+      proficiency3.onchange = function(){
+        document.getElementById("Prof3AcroExp").style.display = (proficiency3.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementById("Prof3AnimExp").style.display = (proficiency3.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementById("Prof3ArcaExp").style.display = (proficiency3.value == 'Arcana') ? 'block' : 'none';
+        document.getElementById("Prof3AthlExp").style.display = (proficiency3.value == 'Athletics') ? 'block' : 'none';
+        document.getElementById("Prof3DeceExp").style.display = (proficiency3.value == 'Deception') ? 'block' : 'none';
+        document.getElementById("Prof3HistExp").style.display = (proficiency3.value == 'History') ? 'block' : 'none';
+        document.getElementById("Prof3InsiExp").style.display = (proficiency3.value == 'Insight') ? 'block' : 'none';
+        document.getElementById("Prof3IntiExp").style.display = (proficiency3.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementById("Prof3InveExp").style.display = (proficiency3.value == 'Investigation') ? 'block' : 'none';
+        document.getElementById("Prof3MediExp").style.display = (proficiency3.value == 'Medicine') ? 'block' : 'none';
+        document.getElementById("Prof3NatuExp").style.display = (proficiency3.value == 'Nature') ? 'block' : 'none';
+        document.getElementById("Prof3PercExp").style.display = (proficiency3.value == 'Perception') ? 'block' : 'none';
+        document.getElementById("Prof3PerfExp").style.display = (proficiency3.value == 'Performance') ? 'block' : 'none';
+        document.getElementById("Prof3PersExp").style.display = (proficiency3.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementById("Prof3ReliExp").style.display = (proficiency3.value == 'Religion') ? 'block' : 'none';
+        document.getElementById("Prof3SligExp").style.display = (proficiency3.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementById("Prof3SteaExp").style.display = (proficiency3.value == 'Stealth') ? 'block' : 'none';
+        document.getElementById("Prof3SurvExp").style.display = (proficiency3.value == 'Survival') ? 'block' : 'none';
+        document.getElementById("Prof3AcroExa").style.display = (proficiency3.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementById("Prof3AnimExa").style.display = (proficiency3.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementById("Prof3ArcaExa").style.display = (proficiency3.value == 'Arcana') ? 'block' : 'none';
+        document.getElementById("Prof3AthlExa").style.display = (proficiency3.value == 'Athletics') ? 'block' : 'none';
+        document.getElementById("Prof3DeceExa").style.display = (proficiency3.value == 'Deception') ? 'block' : 'none';
+        document.getElementById("Prof3HistExa").style.display = (proficiency3.value == 'History') ? 'block' : 'none';
+        document.getElementById("Prof3InsiExa").style.display = (proficiency3.value == 'Insight') ? 'block' : 'none';
+        document.getElementById("Prof3IntiExa").style.display = (proficiency3.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementById("Prof3InveExa").style.display = (proficiency3.value == 'Investigation') ? 'block' : 'none';
+        document.getElementById("Prof3MediExa").style.display = (proficiency3.value == 'Medicine') ? 'block' : 'none';
+        document.getElementById("Prof3NatuExa").style.display = (proficiency3.value == 'Nature') ? 'block' : 'none';
+        document.getElementById("Prof3PercExa").style.display = (proficiency3.value == 'Perception') ? 'block' : 'none';
+        document.getElementById("Prof3PerfExa").style.display = (proficiency3.value == 'Performance') ? 'block' : 'none';
+        document.getElementById("Prof3PersExa").style.display = (proficiency3.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementById("Prof3ReliExa").style.display = (proficiency3.value == 'Religion') ? 'block' : 'none';
+        document.getElementById("Prof3SligExa").style.display = (proficiency3.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementById("Prof3SteaExa").style.display = (proficiency3.value == 'Stealth') ? 'block' : 'none';
+        document.getElementById("Prof3SurvExa").style.display = (proficiency3.value == 'Survival') ? 'block' : 'none';
+      }
+
+    </script>
+
+
+
 
     <!---  CHANGE WITHIN ME --->
   </div>
