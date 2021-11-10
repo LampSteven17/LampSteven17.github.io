@@ -10,7 +10,7 @@
 
     <div class="row">
       <div class="col-md-3">
-        <p> Proficiency 1: </p>
+        <h3> Proficiency 1: </h3>
       </div>
       <div class="col-md-9">
         <select id = "prof1" class="drop">
@@ -38,7 +38,7 @@
 
     <div class="col-md-6">
       <div class="row">
-        <h3>Explanation</h3>
+        <h4>Explanation</h4>
       </div>
       <div class="row" id="Prof1AcroExp" style="display:none">
         <p> You are good at physical activities based on speed or dexterity.</p>
@@ -97,7 +97,7 @@
     </div>
     <div class="col-md-6">
       <div class="row">
-        <h3>Example</h3>
+        <h4>Example</h4>
       </div>
       <div class="row" id="Prof1AcroExa" style="display:none">
         <p>Jumping from one rooftop to another.</p>
@@ -152,8 +152,50 @@
       </div>
     </div>
 
+    <script>
+      var proficiency1 = document.getElementByID("Prof1")
+      proficiency1.onchange = function(){
+        document.getElementByID("Prof1AcroExp").style.display = (proficiency1.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementByID("Prof1AnimExp").style.display = (proficiency1.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementByID("Prof1ArcaExp").style.display = (proficiency1.value == 'Arcana') ? 'block' : 'none';
+        document.getElementByID("Prof1AthlExp").style.display = (proficiency1.value == 'Athletics') ? 'block' : 'none';
+        document.getElementByID("Prof1DeceExp").style.display = (proficiency1.value == 'Deception') ? 'block' : 'none';
+        document.getElementByID("Prof1HistExp").style.display = (proficiency1.value == 'History') ? 'block' : 'none';
+        document.getElementByID("Prof1InsiExp").style.display = (proficiency1.value == 'Insight') ? 'block' : 'none';
+        document.getElementByID("Prof1IntiExp").style.display = (proficiency1.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementByID("Prof1InveExp").style.display = (proficiency1.value == 'Investigation') ? 'block' : 'none';
+        document.getElementByID("Prof1MediExp").style.display = (proficiency1.value == 'Medicine') ? 'block' : 'none';
+        document.getElementByID("Prof1NatuExp").style.display = (proficiency1.value == 'Nature') ? 'block' : 'none';
+        document.getElementByID("Prof1PercExp").style.display = (proficiency1.value == 'Perception') ? 'block' : 'none';
+        document.getElementByID("Prof1PerfExp").style.display = (proficiency1.value == 'Performance') ? 'block' : 'none';
+        document.getElementByID("Prof1PersExp").style.display = (proficiency1.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementByID("Prof1ReliExp").style.display = (proficiency1.value == 'Religion') ? 'block' : 'none';
+        document.getElementByID("Prof1SligExp").style.display = (proficiency1.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementByID("Prof1SteaExp").style.display = (proficiency1.value == 'Stealth') ? 'block' : 'none';
+        document.getElementByID("Prof1SurvExp").style.display = (proficiency1.value == 'Survival') ? 'block' : 'none';
+        document.getElementByID("Prof1AcroExa").style.display = (proficiency1.value == 'Acrobatics') ? 'block' : 'none';
+        document.getElementByID("Prof1AnimExa").style.display = (proficiency1.value == 'Animal Handling') ? 'block' : 'none';
+        document.getElementByID("Prof1ArcaExa").style.display = (proficiency1.value == 'Arcana') ? 'block' : 'none';
+        document.getElementByID("Prof1AthlExa").style.display = (proficiency1.value == 'Athletics') ? 'block' : 'none';
+        document.getElementByID("Prof1DeceExa").style.display = (proficiency1.value == 'Deception') ? 'block' : 'none';
+        document.getElementByID("Prof1HistExa").style.display = (proficiency1.value == 'History') ? 'block' : 'none';
+        document.getElementByID("Prof1InsiExa").style.display = (proficiency1.value == 'Insight') ? 'block' : 'none';
+        document.getElementByID("Prof1IntiExa").style.display = (proficiency1.value == 'Intimidation') ? 'block' : 'none';
+        document.getElementByID("Prof1InveExa").style.display = (proficiency1.value == 'Investigation') ? 'block' : 'none';
+        document.getElementByID("Prof1MediExa").style.display = (proficiency1.value == 'Medicine') ? 'block' : 'none';
+        document.getElementByID("Prof1NatuExa").style.display = (proficiency1.value == 'Nature') ? 'block' : 'none';
+        document.getElementByID("Prof1PercExa").style.display = (proficiency1.value == 'Perception') ? 'block' : 'none';
+        document.getElementByID("Prof1PerfExa").style.display = (proficiency1.value == 'Performance') ? 'block' : 'none';
+        document.getElementByID("Prof1PersExa").style.display = (proficiency1.value == 'Persuasion') ? 'block' : 'none';
+        document.getElementByID("Prof1ReliExa").style.display = (proficiency1.value == 'Religion') ? 'block' : 'none';
+        document.getElementByID("Prof1SligExa").style.display = (proficiency1.value == 'Sleight of Hand') ? 'block' : 'none';
+        document.getElementByID("Prof1SteaExa").style.display = (proficiency1.value == 'Stealth') ? 'block' : 'none';
+        document.getElementByID("Prof1SurvExa").style.display = (proficiency1.value == 'Survival') ? 'block' : 'none';
+      }
 
+    </script>
 
+    
     <!---  CHANGE WITHIN ME --->
   </div>
 </div>
