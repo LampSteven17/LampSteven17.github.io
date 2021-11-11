@@ -4,24 +4,42 @@
 
     <img src="./assets/images/arch.png" class="img-responsive" alt="" style="padding-bottom: 25px; padding-top: -25px">
 
-    <h2>Proficiencies</h2>
+    <h2>Why choose and archetype?</h2>
+    An archetype is a grouping of skills to cater a more balanced, effective character that fits your playstyle.
+
+    <select id="archetypeSelect">
+        <option value='0arch'>Creation</option>
+        <option value='1arch'>Glamour</option>
+        <option value='2arch'>Lore</option>
+        <option value='3arch'>Swords</option>
+        <option value='4arch'>Valor</option>
+        <option value='5arch'>Whispers</option>
+    </select>
+
     <div class="row">
-      <div class="col-md-4">
-        <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Amelia App</h3>
-        <p>June 2017</p>
+      <div class="col-md-6">
+        <h3 class="h5">Archetype Description</h3>
+        <p id="creation" style="display:none">Creation is focused on being able to manipulate your surroundings and create new advantageous situations for your partygoers.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Portland</h3>
-        <p>March 2017</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Denz for Nilon</h3>
-        <p>Jan 2017</p>
+        <h3 class="h5">Who is this Archetype for?</h3>
+        <p id="creation" style="display:none">Individuals who are creatively invclined, don't enjoy planning and like whinging it.</p>
       </div>
     </div>
+
+    <script>
+      var archs = document.getElementById("archetypeSelect")
+      archs.onchange = function(){
+          document.getElementById("creation").style.display = (archs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("glamour").style.display  = (archs.value == '1arch') ? 'block' : 'none';
+          document.getElementById("lore").style.display     = (archs.value == '2arch') ? 'block' : 'none';
+          document.getElementById("swords").style.display   = (archs.value == '3arch') ? 'block' : 'none';
+          document.getElementById("valor").style.display    = (elDEX.value == '4arch') ? 'block' : 'none';
+          document.getElementById("whispers").style.display = (archs.value == '5arch') ? 'block' : 'none';
+      }
+
+    </script>
 
     <!---  CHANGE WITHIN ME --->
   </div>
