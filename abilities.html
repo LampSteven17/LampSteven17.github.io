@@ -537,27 +537,121 @@
 
         <div class="col-md-4">
           <h3>Why do you need a high score?</h3>
-          Having high intelligence will allow you to know things about the natural world, magic, and history.
+          Having a good wisdom score will make you street smart, perceptive, and able to understand others well.
         </div>
         <div class="col-md-4">
           <h3>Why do you need a low score?</h3>
-          There will be other members of your party that have studied. You don't need to be booksmart, just streetsmart.
+          You don't need to be able to read others and notice things well. You can just talk your way out of any trouble you get into. 
         </div>
 
       </div>
     </div>
 
     <div class="row">
-
       <div class="col-md-3">
           <img src="./assets/images/isoCHA.png" class="img-responsive" alt="">
-          <h1 class="centered">32</h1>
+          <select id="chaVal" class="drop">
+              <option value='8'>8</option>
+              <option value='10'>10</option>
+              <option value='12'>12</option>
+              <option value='13'>13</option>
+              <option value='14'>14</option>
+              <option value='15'>15</option>
+          </select>
       </div>
 
-      <div class="col-md-8">
-        <h3 class="h5">super fancy text about my nerdy joke placment holders 42 hahah so funnies</h3>
-      </div>
+      <div class="col-md-9">
 
+        <h3 class="h3">Do you see the man in the crowd about to throw a tomato at you?</h3>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="h3">Charecteristic:</h3>
+          </div>
+          <div class="col-md-2">
+            <h3 class="h3">Example:</h3>
+          </div>
+        </div>
+
+
+        <div class="row" id="8cha" style="display:none">
+          <div class="col-md-6">
+            Forgets or opts not to consider options before taking action.
+          </div>
+          <div class="col-md-3">
+            Crab
+          </div>
+        </div>
+
+        <div class="row" id="10cha" style="display:none">
+          <div class="col-md-6">
+            Makes reasoned decisions most of the time.
+          </div>
+          <div class="col-md-3">
+           10 year olds
+          </div>
+        </div>
+
+        <div class="row" id="12cha" style="display:none">
+          <div class="col-md-6">
+            Able to tell when a person is upset.
+          </div>
+          <div class="col-md-3">
+            Cats
+          </div>
+        </div>
+
+        <div class="row" id="13cha" style="display:none">
+          <div class="col-md-6">
+            Also Able to tell when a person is upset.
+          </div>
+          <div class="col-md-3">
+          Dogs
+          </div>
+        </div>
+
+        <div class="row" id="14cha" style="display:none">
+          <div class="col-md-6">
+            Can get hunches about a situation that doesn't feel right.
+          </div>
+          <div class="col-md-3">
+            Horses during a storm
+          </div>
+        </div>
+
+        <div class="row" id="15cha" style="display:none">
+          <div class="col-md-6">
+            Can get hunches about a situation that doesn't feel right.
+          </div>
+          <div class="col-md-3">
+            Dragons
+          </div>
+        </div>
+
+
+        <script>
+          var elCHA = document.getElementById("chaVal")
+          elCHA.onchange = function(){
+              document.getElementById("8cha").style.display  = (elCHA.value == '8')  ? 'block' : 'none';
+              document.getElementById("10cha").style.display = (elCHA.value == '10') ? 'block' : 'none';
+              document.getElementById("12cha").style.display = (elCHA.value == '12') ? 'block' : 'none';
+              document.getElementById("13cha").style.display = (elCHA.value == '13') ? 'block' : 'none';
+              document.getElementById("14cha").style.display = (elCHA.value == '14') ? 'block' : 'none';
+              document.getElementById("15cha").style.display = (elCHA.value == '15') ? 'block' : 'none';
+          }
+
+        </script>
+
+        <div class="col-md-4">
+          <h3>Why do you need a high score?</h3>
+          Bards run on charisma. You should be able to speak to others and perform for them well.
+        </div>
+        <div class="col-md-4">
+          <h3>Why do you need a low score?</h3>
+          Bards run on being charismatic and persuasive. You should always have high charisma.
+        </div>
+
+      </div>
     </div>
 
     <script>
