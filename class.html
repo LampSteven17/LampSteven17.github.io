@@ -5,7 +5,396 @@
 
     <h2>What is a class?</h2>
     <p style = "margin-bottom:1cm;">Your details your character's abilities that they have and will gain. It shows what you can do in and out of combat to help your team.</p>
-    <h2>Please choose a class:</h2>
+    <h2>Here are your recommended classes:</h2>
+
+
+    <label for="class_recommendation_1">Recommended Class 1: </label>
+      <select name = "class_recommendation_1" id = "class_recommendation_1" disabled>
+        <option value="1a"> Artificer </option>
+        <option value="2a"> Barbarian </option>
+        <option value="3a"> Bard </option>
+        <option value="4a"> Cleric </option>
+        <option value="5a"> Druid </option>
+        <option value="6a"> Fighter </option>
+        <option value="7a"> Monk </option>
+        <option value="8a"> Paladin </option>
+        <option value="9a"> Ranger </option>
+        <option value="10a"> Rogue </option>
+        <option value="11a"> Sorcerer </option>
+        <option value="12a"> Warlock </option>
+        <option value="13a"> Wizard </option>
+      </select>
+
+      <script>
+        var recClass1 = document.getElementById("selection_class");
+        recClass1.onchange = function(){
+          var recClass1a = document.getElementById("Artificera");
+          var recClass2a = document.getElementById("Barbariana");
+          var recClass3a = document.getElementById("Barda");
+          var recClass4a = document.getElementById("Clerica");
+          var recClass5a = document.getElementById("Druida");
+          var recClass6a = document.getElementById("Fightera");
+          var recClass7a = document.getElementById("Monka");
+          var recClass8a = document.getElementById("Paladina");
+          var recClass9a = document.getElementById("Rangera");
+          var recClass10a = document.getElementById("Roguea");
+          var recClass11a = document.getElementById("Sorcerera");
+          var recClass12a = document.getElementById("Warlocka");
+          var recClass13a = document.getElementById("Wizarda");
+          recClass1a.style.display = (this.value == "1a") ? "block":"none";
+          recClass2a.style.display = (this.value == "2a") ? "block":"none";
+          recClass3a.style.display = (this.value == "3a") ? "block":"none";
+          recClass4a.style.display = (this.value == "4a") ? "block":"none";
+          recClass5a.style.display = (this.value == "5a") ? "block":"none";
+          recClass6a.style.display = (this.value == "6a") ? "block":"none";
+          recClass7a.style.display = (this.value == "7a") ? "block":"none";
+          recClass8a.style.display = (this.value == "8a") ? "block":"none";
+          recClass9a.style.display = (this.value == "9a") ? "block":"none";
+          recClass10a.style.display = (this.value == "10a") ? "block":"none";
+          recClass11a.style.display = (this.value == "11a") ? "block":"none";
+          recClass12a.style.display = (this.value == "12a") ? "block":"none";
+          recClass13a.style.display = (this.value == "13a") ? "block":"none";
+        };
+      </script>
+
+      <div id="Artificera" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is an Artificer? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Artificer examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that combines magic and technology to support their teammates. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank" rel="noopener noreferrer"> Iron Man </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Dr._Heinz_Doofenshmirtz" target="_blank" rel="noopener noreferrer"> Dr. Heinz Doofenschmirtz </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Home_Alone_(franchise)" target="_blank" rel="noopener noreferrer"> Kevin McCallister </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Barbariana" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Barbarian? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Barbarian examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> The big guy. They use mostly use heavy weapons and do a lot of damage. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Hulk" target="_blank" rel="noopener noreferrer"> The Hulk </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Gregor_Clegane" target="_blank" rel="noopener noreferrer"> The Mountain </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Barda" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Bard? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Bard examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A performer. Supports their friends in combat and debuffs their foes. The most versatile class. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Alan-a-Dale" target="_blank" rel="noopener noreferrer"> Alan-a-Dale </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Orpheus" target="_blank" rel="noopener noreferrer"> Orpheus </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Jigglypuff" target="_blank" rel="noopener noreferrer"> Jigglypuff </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Star-Lord" target="_blank" rel="noopener noreferrer"> Star-Lord </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Clerica" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Cleric? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Cleric examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior of god. The best healer in the game, but also can do some big damage if needed. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Lucy_Pevensie" target="_blank" rel="noopener noreferrer"> Lucy Pevensie </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Loki_(Marvel_Cinematic_Universe)" target="_blank" rel="noopener noreferrer"> Loki </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Druida" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Druid? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Druid examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A person who is one with nature. Can turn into various animals and use the forest to their advantage. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Poison_Ivy_(character)" target="_blank" rel="noopener noreferrer"> Poison Ivy </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Groot)" target="_blank" rel="noopener noreferrer"> Groot </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Fightera" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Fighter? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Fighter examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> What the name says. Someone who is good at doing damage using any weapon they want in the game. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Captain_America" target="_blank" rel="noopener noreferrer"> Captain America </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Deadpool" target="_blank" rel="noopener noreferrer"> Deadpool </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Jon_Snow_(character)" target="_blank" rel="noopener noreferrer"> Jon Snow </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Monka" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Monk? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Monk examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that uses their fists to do damage using martial arts. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Jackie_Chan" target="_blank" rel="noopener noreferrer"> Jackie Chan </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Bruce_Lee" target="_blank" rel="noopener noreferrer"> Bruce Lee </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://starwars.fandom.com/wiki/Chirrut_%C3%8Emwe" target="_blank" rel="noopener noreferrer"> Chirrut Îmwe </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Paladina" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Paladin? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Paladin examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that works to embody an ideal. They pull strength from that oath to do magic and fight better.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/King_Arthur" target="_blank" rel="noopener noreferrer"> King Arthur </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Peter_Pevensie" target="_blank" rel="noopener noreferrer"> Peter Pevensie </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Rangera" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Ranger? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Ranger examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior with knowledge of the land. They know the terrain and use it to their advantage.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Aragorn" target="_blank" rel="noopener noreferrer"> Aaragorn </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Katniss_Everdeen" target="_blank" rel="noopener noreferrer"> Katniss Everdeen </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)" target="_blank" rel="noopener noreferrer"> Hawkeye </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)" target="_blank" rel="noopener noreferrer"> Link </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Roguea" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Rogue? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Rogue examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that hides in the shadows and attacks when the time is right. Often a little edgy, but especially dexerious.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Han_Solo" target="_blank" rel="noopener noreferrer"> Han Solo </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)" target="_blank" rel="noopener noreferrer"> Black Widow </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Sorcerera" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Sorcerer? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Sorcerer examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that uses magic. Your magic abilities have been passed to you through your bloodline.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Harry_Potter_(character)" target="_blank" rel="noopener noreferrer"> Harry Potter </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Scarlet_Witch" target="_blank" rel="noopener noreferrer"> Scarlet Witch </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Warlocka" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Warlock? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Warlock examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that uses magic. You made a deal with a powerful entity to have magic powers.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Faust" target="_blank" rel="noopener noreferrer"> Dr. Faust </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Ice_King" target="_blank" rel="noopener noreferrer"> The Ice King </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Green_Lantern" target="_blank" rel="noopener noreferrer"> Green Lantern </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Wizarda" style="display:none;">
+        <div class="row">
+          <div class="col-md-7">
+            <h3> What is a Wizard? </h3>
+          </div>
+          <div class="col-md-3">
+            <h3> Famous Wizard examples: </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p> A warrior that uses magic. You gain your magic through dedicated studies. </p>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Merlin" target="_blank" rel="noopener noreferrer"> Merlin </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Doctor_Strange" target="_blank" rel="noopener noreferrer"> Dr. Strange </a>
+            </div>
+            <div class="row">
+              <a style = "margin-left:15px" href="https://en.wikipedia.org/wiki/Luke_Skywalker" target="_blank" rel="noopener noreferrer"> Luke Skywalker </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <label for="selection_class">Choose a class: </label>
