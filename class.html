@@ -9,7 +9,7 @@
 
 
     <label for="class_recommendation_1">Recommended Class 1: </label>
-      <select name = "class_recommendation_1" id = "class_recommendation_1" disabled>
+      <select name = "class_recommendation_1" id = "class_recommendation_1">
         <option value="1a"> Artificer </option>
         <option value="2a"> Barbarian </option>
         <option value="3a"> Bard </option>
@@ -26,7 +26,7 @@
       </select>
 
       <script>
-        var recClass1 = document.getElementById("selection_class");
+        var recClass1 = document.getElementById("class_recommendation_1");
         recClass1.onchange = function(){
           var recClass1a = document.getElementById("Artificera");
           var recClass2a = document.getElementById("Barbariana");
@@ -396,6 +396,7 @@
         </div>
       </div>
 
+    <div class = "row"></div>
 
     <label for="selection_class">Choose a class: </label>
       <select name = "selection_class" id = "selection_class">
