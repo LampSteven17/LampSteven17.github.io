@@ -407,3 +407,69 @@
     <!---  CHANGE WITHIN ME --->
   </div>
 </div>
+
+
+<!---
+
+      <img src="./assets/images/subclasses.png" class="img-responsive" alt="" style="padding-bottom: 25px; padding-top: -25px">
+
+      <h2>SUBCLASSES</h2>
+
+      <label for="selection">Choose a role:</label>
+          <select name="selection" id="selection">
+              <option value="0" selected>No role selected</option>
+              <option value="1">Close Combat</option>
+              <option value="2">Ranged Combat</option>
+              <option value="3">Healer</option>
+              <option value="4">Stealth</option>
+              <option value="5">Jack of All Trades</option>
+          </select>
+
+      <script>
+          var elem = document.getElementById("selection");
+          elem.onchange = function(){
+              var spell1 = document.getElementById("closeSpell");
+              var spell2 = document.getElementById("rangedSpell");
+              var spell3 = document.getElementById("healSpell");
+              var spell4 = document.getElementById("stealthSpell");
+              var spell5 = document.getElementById("allSpell");
+              spell1.style.display = (this.value == "1") ? "block":"none";
+              spell2.style.display = (this.value == "2") ? "block":"none";
+              spell3.style.display = (this.value == "3") ? "block":"none";
+              spell4.style.display = (this.value == "4") ? "block":"none";
+              spell5.style.display = (this.value == "5") ? "block":"none";
+
+              var cantrip1 = document.getElementById("close");
+              var cantrip2 = document.getElementById("ranged");
+              var cantrip3 = document.getElementById("healer");
+              var cantrip4 = document.getElementById("stealth");
+              var cantrip5 = document.getElementById("all");
+              cantrip1.style.display = (this.value == "1") ? "block":"none";
+              cantrip2.style.display = (this.value == "2") ? "block":"none";
+              cantrip3.style.display = (this.value == "3") ? "block":"none";
+              cantrip4.style.display = (this.value == "4") ? "block":"none";
+              cantrip5.style.display = (this.value == "5") ? "block":"none";
+          };
+      </script>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
+          <h3 class="h5">Amelia App</h3>
+          <p>June 2021</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
+          <h3 class="h5">Portland</h3>
+          <p>March 2017</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
+          <h3 class="h5">Denz for Nilon</h3>
+          <p>Jan 2017</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+--->

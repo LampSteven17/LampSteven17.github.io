@@ -4,62 +4,104 @@
 
     <img src="./assets/images/subclasses.png" class="img-responsive" alt="" style="padding-bottom: 25px; padding-top: -25px">
 
-    <h2>SUBCLASSES</h2>
-
-    <label for="selection">Choose a role:</label>
-        <select name="selection" id="selection">
-            <option value="0" selected>No role selected</option>
-            <option value="1">Close Combat</option>
-            <option value="2">Ranged Combat</option>
-            <option value="3">Healer</option>
-            <option value="4">Stealth</option>
-            <option value="5">Jack of All Trades</option>
-        </select>
-
-    <script>
-        var elem = document.getElementById("selection");
-        elem.onchange = function(){
-            var spell1 = document.getElementById("closeSpell");
-            var spell2 = document.getElementById("rangedSpell");
-            var spell3 = document.getElementById("healSpell");
-            var spell4 = document.getElementById("stealthSpell");
-            var spell5 = document.getElementById("allSpell");
-            spell1.style.display = (this.value == "1") ? "block":"none";
-            spell2.style.display = (this.value == "2") ? "block":"none";
-            spell3.style.display = (this.value == "3") ? "block":"none";
-            spell4.style.display = (this.value == "4") ? "block":"none";
-            spell5.style.display = (this.value == "5") ? "block":"none";
-
-            var cantrip1 = document.getElementById("close");
-            var cantrip2 = document.getElementById("ranged");
-            var cantrip3 = document.getElementById("healer");
-            var cantrip4 = document.getElementById("stealth");
-            var cantrip5 = document.getElementById("all");
-            cantrip1.style.display = (this.value == "1") ? "block":"none";
-            cantrip2.style.display = (this.value == "2") ? "block":"none";
-            cantrip3.style.display = (this.value == "3") ? "block":"none";
-            cantrip4.style.display = (this.value == "4") ? "block":"none";
-            cantrip5.style.display = (this.value == "5") ? "block":"none";
-        };
-    </script>
+    <h3 class="h4">What is a subclass?</h3>
+    <p>A specialization that your character can take to make their abilites better for a certain role in the party.</p>
 
     <div class="row">
-      <div class="col-md-4">
-        <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Amelia App</h3>
-        <p>June 2021</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Portland</h3>
-        <p>March 2017</p>
-      </div>
-      <div class="col-md-4">
-        <img src="./assets/images/img-04.jpg" class="img-responsive" alt="">
-        <h3 class="h5">Denz for Nilon</h3>
-        <p>Jan 2017</p>
+      <div class="col-md-6">
+        <select id="subtypeSelect">
+            <option value='0suby' selected>Creation</option>
+            <option value='1suby'>Glamour</option>
+            <option value='2suby'>Lore</option>
+            <option value='3suby'>Swords</option>
+            <option value='4suby'>Valor</option>
+            <option value='5suby'>Whispers</option>
+        </select>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="h5">Subtype Description</h3>
+      </div>
+      <div class="col-md-6">
+        <h3 class="h5">Who is this subtype for?</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div id="creation" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that use new ways to inspire their allies. The can create objects out of nothing and animate the objects around them to help them with their tasks.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Creation is for those who like to say screw planning and go full hog the second a fight breaks out.</p>
+        </div>
+      </div>
+
+      <div id="glamour" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that use their dazzling appearance to manipulate a charm others. They are masters of illusion.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Glamour is for all the aspiring sociopaths that would love to take control of any and all individuals.</p>
+        </div>
+      </div>
+
+      <div id="lore" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that use their knowledge of stories and myth to gain extra spells, skills, and tools for use in and out of combat.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lore likes to find meaning in everything, kindof like your ex back in college who was waaaay too into crystals and horoscopes.</p>
+        </div>
+      </div>
+
+      <div id="swords" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that perform in battle. They can use their music to allow themselves to special battle maneuvers of power and speed.</p>
+        </div>
+        <div class="col-md-6">
+          <p>~Mystical magical sword of the forest, let me stab these nay-do-well-ers and make them the sorest!~</p>
+        </div>
+      </div>
+
+      <div id="valor" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that are also might warriors. They can use their music to inspire others and themselves to do more damage in battle.</p>
+        </div>
+        <div class="col-md-6">
+          <p>For individuals with a bad case of protagonist syndrome (may also lack a sense of humor).</p>
+        </div>
+      </div>
+
+      <div id="whispers" style="display:none">
+        <div class="col-md-6">
+          <p>Bards that use their knowledge and magic to uncover secrets and turn them against others through extortion and threats. Very street smart and politically minded with the ability to manipulate others in and out of combat.</p>
+        </div>
+        <div class="col-md-6">
+          <p>~whisper~ ~whisper~ haven't ~whisper~ gotten over my edgy phase yet ~whisper~ Blink-182 is my favorite band ~whisper~ ~whisper~.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <script>
+      var subs = document.getElementById("subtypeSelect")
+      subs.onchange = function(){
+          document.getElementById("creation").style.display = (subs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("glamour").style.display  = (subs.value == '1arch') ? 'block' : 'none';
+          document.getElementById("lore").style.display     = (subs.value == '2arch') ? 'block' : 'none';
+          document.getElementById("swords").style.display   = (subs.value == '3arch') ? 'block' : 'none';
+          document.getElementById("valor").style.display    = (subs.value == '4arch') ? 'block' : 'none';
+          document.getElementById("whispers").style.display = (subs.value == '5arch') ? 'block' : 'none';
+      }
+
+      $("archetypeSelect").change()
+    </script>
 
     <!---  CHANGE WITHIN ME --->
   </div>
