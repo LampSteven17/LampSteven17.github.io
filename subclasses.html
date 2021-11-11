@@ -90,14 +90,14 @@
 
 
     <script>
-      var subs = document.getElementById("subtypeSelect")
-      subs.onchange = function(){
-          document.getElementById("creation").style.display = (subs.value == '0arch') ? 'block' : 'none';
-          document.getElementById("glamour").style.display  = (subs.value == '1arch') ? 'block' : 'none';
-          document.getElementById("lore").style.display     = (subs.value == '2arch') ? 'block' : 'none';
-          document.getElementById("swords").style.display   = (subs.value == '3arch') ? 'block' : 'none';
-          document.getElementById("valor").style.display    = (subs.value == '4arch') ? 'block' : 'none';
-          document.getElementById("whispers").style.display = (subs.value == '5arch') ? 'block' : 'none';
+      var subsy= document.getElementById("subtypeSelect")
+      subsy.onchange = function(){
+          document.getElementById("creation").style.display = (subsy.value == '0arch') ? 'block' : 'none';
+          document.getElementById("glamour").style.display  = (subsy.value == '1arch') ? 'block' : 'none';
+          document.getElementById("lore").style.display     = (subsy.value == '2arch') ? 'block' : 'none';
+          document.getElementById("swords").style.display   = (subsy.value == '3arch') ? 'block' : 'none';
+          document.getElementById("valor").style.display    = (subsy.value == '4arch') ? 'block' : 'none';
+          document.getElementById("whispers").style.display = (subsy.value == '5arch') ? 'block' : 'none';
       }
 
       $("subtypeSelect").change()

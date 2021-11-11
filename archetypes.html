@@ -4,18 +4,17 @@
 
     <img src="./assets/images/arch.png" class="img-responsive" alt="" style="padding-bottom: 25px; padding-top: -25px">
 
-    <h3 class="h4">Why choose an archetype?</h3>
-    <p>An archetype is a grouping of skills to cater a more balanced, effective character that fits your playstyle.</p>
+    <h3 class="h4">What is an archetype?</h3>
+    <p>The skills and abilities that you bring to the team. This is not an official ruling, but helps to define your character later on.</p>
 
     <div class="row">
       <div class="col-md-6">
         <select id="archetypeSelect">
-            <option value='0arch' selected>Creation</option>
-            <option value='1arch'>Glamour</option>
-            <option value='2arch'>Lore</option>
-            <option value='3arch'>Swords</option>
-            <option value='4arch'>Valor</option>
-            <option value='5arch'>Whispers</option>
+            <option value='0arch' selected>Close-Combat</option>
+            <option value='1arch'>Ranged-Combat</option>
+            <option value='2arch'>Healer</option>
+            <option value='3arch'>Stealth</option>
+            <option value='4arch'>All of the Above</option>
         </select>
       </div>
     </div>
@@ -31,7 +30,7 @@
 
     <div class="row">
 
-      <div id="creation" style="display:none">
+      <div id="Close-Combat" style="display:none">
         <div class="col-md-6">
           <p>Creation is focused on being able to manipulate your surroundings and create new advantageous situations for your partygoers.</p>
         </div>
@@ -40,7 +39,7 @@
         </div>
       </div>
 
-      <div id="glamour" style="display:none">
+      <div id="Ranged-Combat" style="display:none">
         <div class="col-md-6">
           <p>Galmour is focused on wowing and manipulating your adversaries (for pain AND pleasure!)</p>
         </div>
@@ -49,7 +48,7 @@
         </div>
       </div>
 
-      <div id="lore" style="display:none">
+      <div id="Healer" style="display:none">
         <div class="col-md-6">
           <p>Lore are individuals who love to read and discover what the world means? Does this rock mean impending doom, who knows....or wait YOU KNOW!</p>
         </div>
@@ -58,7 +57,7 @@
         </div>
       </div>
 
-      <div id="swords" style="display:none">
+      <div id="Stealth" style="display:none">
         <div class="col-md-6">
           <p>Swords are for those people that really love to go stabby stabby while singing a song.</p>
         </div>
@@ -67,7 +66,7 @@
         </div>
       </div>
 
-      <div id="valor" style="display:none">
+      <div id="All of the Above" style="display:none">
         <div class="col-md-6">
           <p>Valor is for those that fight with honor, and want put the group before the self.</p>
         </div>
@@ -76,28 +75,17 @@
         </div>
       </div>
 
-      <div id="whispers" style="display:none">
-        <div class="col-md-6">
-          <p>For those that like hiding in the shadows and mumbling to themselves.</p>
-        </div>
-        <div class="col-md-6">
-          <p>~whisper~ ~whisper~ haven't ~whisper~ gotten over my edgy phase yet ~whisper~ Blink-182 is my favorite band ~whisper~ ~whisper~.</p>
-        </div>
-      </div>
-
     </div>
-
 
 
     <script>
       var archs = document.getElementById("archetypeSelect")
       archs.onchange = function(){
-          document.getElementById("creation").style.display = (archs.value == '0arch') ? 'block' : 'none';
-          document.getElementById("glamour").style.display  = (archs.value == '1arch') ? 'block' : 'none';
-          document.getElementById("lore").style.display     = (archs.value == '2arch') ? 'block' : 'none';
-          document.getElementById("swords").style.display   = (archs.value == '3arch') ? 'block' : 'none';
-          document.getElementById("valor").style.display    = (archs.value == '4arch') ? 'block' : 'none';
-          document.getElementById("whispers").style.display = (archs.value == '5arch') ? 'block' : 'none';
+          document.getElementById("Close-Combat").style.display        = (archs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("Ranged-Combat").style.display       = (archs.value == '1arch') ? 'block' : 'none';
+          document.getElementById("Healer").style.display              = (archs.value == '2arch') ? 'block' : 'none';
+          document.getElementById("Stealth").style.display             = (archs.value == '3arch') ? 'block' : 'none';
+          document.getElementById("All of the Above").style.display    = (archs.value == '4arch') ? 'block' : 'none';
       }
 
       $("archetypeSelect").change()
