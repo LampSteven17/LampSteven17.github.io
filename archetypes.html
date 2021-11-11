@@ -81,13 +81,12 @@
     <script src=shittyJavaScript.js>
       var archs = document.getElementById("archetypeSelect")
       archs.onchange = function(){
-      let valy = archs.value;
 
-          document.getElementById("Close-Combat").style.display        = (valy == '0arch') ? 'block' : 'none';
-          document.getElementById("Ranged-Combat").style.display       = (valy == '1arch') ? 'block' : 'none';
-          document.getElementById("Healer").style.display              = (valy == '2arch') ? 'block' : 'none';
-          document.getElementById("Stealth").style.display             = (valy == '3arch') ? 'block' : 'none';
-          document.getElementById("All of the Above").style.display    = (valy == '4arch') ? 'block' : 'none';
+          document.getElementById("Close-Combat").style.display        = (archs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("Ranged-Combat").style.display       = (archs.value == '1arch') ? 'block' : 'none';
+          document.getElementById("Healer").style.display              = (archs.value == '2arch') ? 'block' : 'none';
+          document.getElementById("Stealth").style.display             = (archs.value == '3arch') ? 'block' : 'none';
+          document.getElementById("All of the Above").style.display    = (archs.value == '4arch') ? 'block' : 'none';
 
       }
       $("archetypeSelect").change()
