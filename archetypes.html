@@ -21,24 +21,39 @@
     <div class="row">
       <div class="col-md-6">
         <h3 class="h5">Archetype Description</h3>
-        <p class="creation" style="display:none">Creation is focused on being able to manipulate your surroundings and create new advantageous situations for your partygoers.</p>
       </div>
       <div class="col-md-6">
         <h3 class="h5">Who is this Archetype for?</h3>
-        <p class="creation" style="display:none">Individuals who are creatively invclined, don't enjoy planning and like whinging it.</p>
       </div>
     </div>
+
+    <div class="row">
+
+      <div id="creation">
+        <div class="col-md-6">
+          <p style="display:none">Creation is focused on being able to manipulate your surroundings and create new advantageous situations for your partygoers.</p>
+        </div>
+        <div class="col-md-6">
+          <p style="display:none">Creation is focused on being able to manipulate your surroundings and create new advantageous situations for your partygoers.</p>
+        </div>
+      </div>
+
+    </div>
+
+
 
     <script>
       var archs = document.getElementById("archetypeSelect")
       archs.onchange = function(){
-          document.getElementsByClassName("creation").style.display = (archs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("creation").style.display = (archs.value == '0arch') ? 'block' : 'none';
           document.getElementById("glamour").style.display  = (archs.value == '1arch') ? 'block' : 'none';
           document.getElementById("lore").style.display     = (archs.value == '2arch') ? 'block' : 'none';
           document.getElementById("swords").style.display   = (archs.value == '3arch') ? 'block' : 'none';
           document.getElementById("valor").style.display    = (elDEX.value == '4arch') ? 'block' : 'none';
           document.getElementById("whispers").style.display = (archs.value == '5arch') ? 'block' : 'none';
       }
+
+      $("archetypeSelect").change()
     </script>
 
     <!---  CHANGE WITHIN ME --->
