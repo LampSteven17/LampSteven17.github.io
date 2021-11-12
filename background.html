@@ -41,7 +41,7 @@
         <input type="text" name="recommended_background_1" value="Entertainer" readonly="true">
         <div class="row">
             <div class="col-md-4">
-                <h3 style=margin-top:10px;margin-bottom:10px;> What is your background? </h3>
+                <h3 style=margin-top:10px;margin-bottom:10px;> What is an Entertainer? </h3>
             </div>
             <div class="col-md-8">
                 <h3 style=margin-top:10px;margin-bottom:10px;> Why an Entertainer? </h3>
@@ -67,7 +67,7 @@
         <input type="text" name="recommended_background_2" value="Charlatan" readonly="true">
         <div class="row">
             <div class="col-md-4">
-                <h3 style=margin-top:10px;margin-bottom:10px;> What is your background? </h3>
+                <h3 style=margin-top:10px;margin-bottom:10px;> What is a Charlatan? </h3>
             </div>
             <div class="col-md-8">
                 <h3 style=margin-top:10px;margin-bottom:10px;> Why a Charlatan? </h3>
@@ -93,7 +93,7 @@
         <input type="text" name="recommended_background_3" value="Urchin" readonly="true">
         <div class="row">
             <div class="col-md-4">
-                <h3 style=margin-top:10px;margin-bottom:10px;> What is your background? </h3>
+                <h3 style=margin-top:10px;margin-bottom:10px;> What is an Urchin? </h3>
             </div>
             <div class="col-md-8">
                 <h3 style=margin-top:10px;margin-bottom:10px;> Why an Urchin? </h3>
@@ -137,6 +137,372 @@
                 <option value="17">Urchin</option>
 
             </select>
+
+            <script>
+                var elem = document.getElementById("selection_background");
+                elem.onchange = function(){
+                    var hiddenDiv1 = document.getElementById("Acolyte");
+                    var hiddenDiv2 = document.getElementById("Charlatan");
+                    var hiddenDiv3 = document.getElementById("Criminal/Spy");
+                    var hiddenDiv4 = document.getElementById("Entertainer");
+                    var hiddenDiv5 = document.getElementById("Folk Hero");
+                    var hiddenDiv6 = document.getElementById("Gladiator");
+                    var hiddenDiv7 = document.getElementById("Guild Artisan / Guild Merchant");
+                    var hiddenDiv8 = document.getElementById("Haunted One");
+                    var hiddenDiv9 = document.getElementById("Hermit");
+                    var hiddenDiv10 = document.getElementById("Knight");
+                    var hiddenDiv11 = document.getElementById("Noble");
+                    var hiddenDiv12 = document.getElementById("Outlander");
+                    var hiddenDiv13 = document.getElementById("Pirate");
+                    var hiddenDiv14 = document.getElementById("Sage");
+                    var hiddenDiv15 = document.getElementById("Sailor");
+                    var hiddenDiv16 = document.getElementById("Soldier");
+                    var hiddenDiv17 = document.getElementById("Urchin");
+                    hiddenDiv1.style.display = (this.value == "1") ? "block":"none";
+                    hiddenDiv2.style.display = (this.value == "2") ? "block":"none";
+                    hiddenDiv3.style.display = (this.value == "3") ? "block":"none";
+                    hiddenDiv4.style.display = (this.value == "4") ? "block":"none";
+                    hiddenDiv5.style.display = (this.value == "5") ? "block":"none";
+                    hiddenDiv6.style.display = (this.value == "6") ? "block":"none";
+                    hiddenDiv7.style.display = (this.value == "7") ? "block":"none";
+                    hiddenDiv8.style.display = (this.value == "8") ? "block":"none";
+                    hiddenDiv9.style.display = (this.value == "9") ? "block":"none";
+                    hiddenDiv10.style.display = (this.value == "10") ? "block":"none";
+                    hiddenDiv11.style.display = (this.value == "11") ? "block":"none";
+                    hiddenDiv12.style.display = (this.value == "12") ? "block":"none";
+                    hiddenDiv13.style.display = (this.value == "13") ? "block":"none";
+                    hiddenDiv14.style.display = (this.value == "14") ? "block":"none";
+                    hiddenDiv15.style.display = (this.value == "15") ? "block":"none";
+                    hiddenDiv16.style.display = (this.value == "16") ? "block":"none";
+                    hiddenDiv17.style.display = (this.value == "17") ? "block":"none";
+
+                };
+            </script>
+
+            <div id="Acolyte" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why an Acolyte?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who is a member of a church or temple.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are able to read people better. You know more about the gods. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Charlatan" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Charlatan?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who tricks others with various deceptions.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are a good liar. You are good at concealing your physical deception. You can disguise yourself. You can forge documents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Criminal/Spy" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Criminal/Spy?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who has done illegal actions in the past.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are a good liar. You are good at concealing your person from view. You are good at gambling. You can pick locks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Entertainer" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why an Entertainer?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who performs for others to gain coin and power.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on speed or dexterity. You sing, dance, or play an instrument well. You can disguise yourself. You can play an extra instrument.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Folk Hero" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Folk Hero?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who performed a great deed in the past.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You work well with animals and they generally like you. You know how to navigate and survive in the wilderness. You are good at gambling. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Gladiator" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Gladiator?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who fought for others amusement.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on speed or dexterity. You sing, dance, or play an instrument well. You can disguise yourself. You receive an extra weapon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Guild Artisan / Guild Merchant" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Guild Artisan / Guild Merchant?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone with crafting or merchant skills.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You easily know what others are thinking and feeling. You can convince others to do what you want through logical or emotional arguments. You are good at using tools. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Haunted One" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Haunted One?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who was hurt by a tragic past.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You know a lot about magical items and spells. You notice small details when searching an area and can deduce their meaning. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Hermit" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Hermit?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who lived by themselves for many years.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You know about the body and how it can be cared for. You know a lot about the gods and their teachings. You know how to use a first aid kit well. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Knight" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Knight?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who served a high-ranking family.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You know a lot about the past. You can convince others to do what you want through logical or emotional arguments. You are good a gambling. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Noble" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Noble?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who comes from governmental power.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You know a lot about the past. You can convince others to do what you want through logical or emotional arguments. You are good a gambling. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Outlander" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why an Outlander?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who traveled to distant lands.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on strength. You know how to navigate and survive in the wilderness. You know how to play an extra musical instrument. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Pirate" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Pirate?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who plundered ships on the high seas.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on strength. You sense things in your environment quickly. You how to make and read maps. You can drive a boat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Sage" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Sage?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who studied some form of knowledge.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You know a lot about magical items and spells. You know a lot about the past. You know more languages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Sailor" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Sailor?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who worked on a boat.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on strength. You sense things in your environment quickly. You how to make and read maps. You can drive a boat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Soldier" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why a Soldier?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who worked for the government to keep order and citizen's safe.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at physical activities based on strength. You can convince others to do what you want through hostile acts. You are good a gambling. You can drive a cart or car.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Urchin" style="display:none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>What is your background?</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 style=margin-top:10px;margin-bottom:10px;>Why an Urchin?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Someone who lived on the streets of a city.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>You are good at concealing your physical deception. You are good at concealing your person from view. You can disguise yourself. You can pick locks.</p>
+                    </div>
+                </div>
+            </div>
+
+
 
             </div>
 
