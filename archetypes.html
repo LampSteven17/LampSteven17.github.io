@@ -78,24 +78,18 @@
     </div>
 
     <script>
-      function funcy(class,subclass,str,dex,con,int,wis,cha,prof1,prof2,prof3,spellsCantrips,spellsLevelOne){
-        document.getElementById("strVal").value = str;
-
-      }
-    </script>
-
-    <script>
 
       var archs = document.getElementById("archetypeSelect");
       archs.onchange = function(){
 
           document.getElementById("Close-Combat").style.display        = (archs.value == '0arch') ? 'block' : 'none';
+          document.getElementById("strVal").value = 15;
+
+
           document.getElementById("Ranged-Combat").style.display       = (archs.value == '1arch') ? 'block' : 'none';
           document.getElementById("Healer").style.display              = (archs.value == '2arch') ? 'block' : 'none';
           document.getElementById("Stealth").style.display             = (archs.value == '3arch') ? 'block' : 'none';
           document.getElementById("All of the Above").style.display    = (archs.value == '4arch') ? 'block' : 'none';
-
-          funcy(0,0,15,0,0,0,0,0,0,0,0,0,0);
 
       }
       $("archetypeSelect").change();
