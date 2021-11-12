@@ -83,13 +83,21 @@
       archs.onchange = function(){
 
           document.getElementById("Close-Combat").style.display        = (archs.value == '0arch') ? 'block' : 'none';
-          document.getElementById("strVal").value = 15;
-
-
           document.getElementById("Ranged-Combat").style.display       = (archs.value == '1arch') ? 'block' : 'none';
           document.getElementById("Healer").style.display              = (archs.value == '2arch') ? 'block' : 'none';
           document.getElementById("Stealth").style.display             = (archs.value == '3arch') ? 'block' : 'none';
           document.getElementById("All of the Above").style.display    = (archs.value == '4arch') ? 'block' : 'none';
+
+          switch(archs.value){
+            case "0arch":
+              document.getElementById("strVal").value = 10;
+              document.getElementById("dexVal").value = 15;
+
+              break;
+
+
+          }
+
 
       }
       $("archetypeSelect").change();
