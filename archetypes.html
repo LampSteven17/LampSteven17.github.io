@@ -77,7 +77,12 @@
 
     </div>
 
-    <script>
+    <script language="text/javascript">
+
+      function setValues(class,subclass,str,dex,con,int,wis,cha,prof1,prof2,prof3,spellsCantrips,spellsLevelOne){
+        document.getElementById("strVal").value = str;
+
+      }
 
       var archs = document.getElementById("archetypeSelect");
       archs.onchange = function(){
