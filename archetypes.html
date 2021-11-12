@@ -78,6 +78,13 @@
     </div>
 
     <script>
+      function funcy(class,subclass,str,dex,con,int,wis,cha,prof1,prof2,prof3,spellsCantrips,spellsLevelOne){
+        document.getElementById("strVal").value = str;
+
+      }
+    </script>
+
+    <script>
 
       var archs = document.getElementById("archetypeSelect");
       archs.onchange = function(){
@@ -92,12 +99,6 @@
 
       }
       $("archetypeSelect").change();
-
-      function funcy(class,subclass,str,dex,con,int,wis,cha,prof1,prof2,prof3,spellsCantrips,spellsLevelOne){
-        document.getElementById("strVal").value = str;
-
-      }
-
 
     </script>
 
