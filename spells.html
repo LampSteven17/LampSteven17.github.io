@@ -471,21 +471,22 @@
     </div>
 
     <script>
-        document.getElementById("firstSpell").onchange = function(){
-            document.getElementById("bane").style.display                = (this.value == "bane") ? "block":"none";
-            document.getElementById("earthTremor").style.display         = (this.value == "earthTremor") ? "block":"none";
-            document.getElementById("thunderWave").style.display         = (this.value == "thunderWave") ? "block":"none";
-            document.getElementById("colorSpray").style.display          = (this.value == "colorSpray") ? "block":"none";
-            document.getElementById("dissonantWhispers").style.display   = (this.value == "dissonantWhispers") ? "block":"none";
-            document.getElementById("sleep").style.display               = (this.value == "sleep") ? "block":"none";
-            document.getElementById("fairyFire").style.display           = (this.value == "fairyFire") ? "block":"none";
-            document.getElementById("cureWounds").style.display          = (this.value == "cureWounds") ? "block":"none";
-            document.getElementById("healingWord").style.display         = (this.value == "healingWord") ? "block":"none";
-            document.getElementById("featherFall").style.display         = (this.value == "featherFall") ? "block":"none";
-            document.getElementById("comprehendLanguages").style.display = (this.value == "comprehendLanguages") ? "block":"none";
-            document.getElementById("identify").style.display            = (this.value == "identify") ? "block":"none";
-            document.getElementById("charmPerson").style.display         = (this.value == "charmPerson") ? "block":"none";
-            document.getElementById("tasha").style.display               = (this.value == "tasha") ? "block":"none";
+        var spell1 = document.getElementById("firstSpell")
+        spell1.onchange = function(){
+            document.getElementById("bane").style.display                = (spell1.value == "bane") ? "block":"none";
+            document.getElementById("earthTremor").style.display         = (spell1.value == "earthTremor") ? "block":"none";
+            document.getElementById("thunderWave").style.display         = (spell1.value == "thunderWave") ? "block":"none";
+            document.getElementById("colorSpray").style.display          = (spell1.value == "colorSpray") ? "block":"none";
+            document.getElementById("dissonantWhispers").style.display   = (spell1.value == "dissonantWhispers") ? "block":"none";
+            document.getElementById("sleep").style.display               = (spell1.value == "sleep") ? "block":"none";
+            document.getElementById("fairyFire").style.display           = (spell1.value == "fairyFire") ? "block":"none";
+            document.getElementById("cureWounds").style.display          = (spell1.value == "cureWounds") ? "block":"none";
+            document.getElementById("healingWord").style.display         = (spell1.value == "healingWord") ? "block":"none";
+            document.getElementById("featherFall").style.display         = (spell1.value == "featherFall") ? "block":"none";
+            document.getElementById("comprehendLanguages").style.display = (spell1.value == "comprehendLanguages") ? "block":"none";
+            document.getElementById("identify").style.display            = (spell1.value == "identify") ? "block":"none";
+            document.getElementById("charmPerson").style.display         = (spell1.value == "charmPerson") ? "block":"none";
+            document.getElementById("tasha").style.display               = (spell1.value == "tasha") ? "block":"none";
         };
     </script>
 
@@ -555,20 +556,20 @@
     <script>
         var spell2 = document.getElementById("secondSpell");
         spell2.onchange = function(){
-            document.getElementById("bane1").style.display                = (this.value == "bane") ? "block":"none";
-            document.getElementById("earthTremor1").style.display         = (this.value == "earthTremor") ? "block":"none";
-            document.getElementById("thunderWave1").style.display         = (this.value == "thunderWave") ? "block":"none";
-            document.getElementById("colorSpray1").style.display          = (this.value == "colorSpray") ? "block":"none";
-            document.getElementById("dissonantWhispers1").style.display   = (this.value == "dissonantWhispers") ? "block":"none";
-            document.getElementById("sleep1").style.display               = (this.value == "sleep") ? "block":"none";
-            document.getElementById("fairyFire1").style.display           = (this.value == "fairyFire") ? "block":"none";
-            document.getElementById("cureWounds1").style.display          = (this.value == "cureWounds") ? "block":"none";
-            document.getElementById("healingWord1").style.display         = (this.value == "healingWord") ? "block":"none";
-            document.getElementById("featherFall1").style.display         = (this.value == "featherFall") ? "block":"none";
-            document.getElementById("comprehendLanguages1").style.display = (this.value == "comprehendLanguages") ? "block":"none";
-            document.getElementById("identify1").style.display            = (this.value == "identify") ? "block":"none";
-            document.getElementById("charmPerson1").style.display         = (this.value == "charmPerson") ? "block":"none";
-            document.getElementById("tasha1").style.display               = (this.value == "tasha") ? "block":"none";
+            document.getElementById("bane1").style.display                = (spell2.value == "bane") ? "block":"none";
+            document.getElementById("earthTremor1").style.display         = (spell2.value == "earthTremor") ? "block":"none";
+            document.getElementById("thunderWave1").style.display         = (spell2.value == "thunderWave") ? "block":"none";
+            document.getElementById("colorSpray1").style.display          = (spell2.value == "colorSpray") ? "block":"none";
+            document.getElementById("dissonantWhispers1").style.display   = (spell2.value == "dissonantWhispers") ? "block":"none";
+            document.getElementById("sleep1").style.display               = (spell2.value == "sleep") ? "block":"none";
+            document.getElementById("fairyFire1").style.display           = (spell2.value == "fairyFire") ? "block":"none";
+            document.getElementById("cureWounds1").style.display          = (spell2.value == "cureWounds") ? "block":"none";
+            document.getElementById("healingWord1").style.display         = (spell2.value == "healingWord") ? "block":"none";
+            document.getElementById("featherFall1").style.display         = (spell2.value == "featherFall") ? "block":"none";
+            document.getElementById("comprehendLanguages1").style.display = (spell2.value == "comprehendLanguages") ? "block":"none";
+            document.getElementById("identify1").style.display            = (spell2.value == "identify") ? "block":"none";
+            document.getElementById("charmPerson1").style.display         = (spell2.value == "charmPerson") ? "block":"none";
+            document.getElementById("tasha1").style.display               = (spell2.value == "tasha") ? "block":"none";
         };
     </script>
 
@@ -638,20 +639,20 @@
     <script>
         var spell3 = document.getElementById("thirdSpell");
         spell3.onchange = function(){
-            document.getElementById("bane2").style.display                = (this.value == "bane") ? "block":"none";
-            document.getElementById("earthTremor2").style.display         = (this.value == "earthTremor") ? "block":"none";
-            document.getElementById("thunderWave2").style.display         = (this.value == "thunderWave") ? "block":"none";
-            document.getElementById("colorSpray2").style.display          = (this.value == "colorSpray") ? "block":"none";
-            document.getElementById("dissonantWhispers2").style.display   = (this.value == "dissonantWhispers") ? "block":"none";
-            document.getElementById("sleep2").style.display               = (this.value == "sleep") ? "block":"none";
-            document.getElementById("fairyFire2").style.display           = (this.value == "fairyFire") ? "block":"none";
-            document.getElementById("cureWounds2").style.display          = (this.value == "cureWounds") ? "block":"none";
-            document.getElementById("healingWord2").style.display         = (this.value == "healingWord") ? "block":"none";
-            document.getElementById("featherFall2").style.display         = (this.value == "featherFall") ? "block":"none";
-            document.getElementById("comprehendLanguages2").style.display = (this.value == "comprehendLanguages") ? "block":"none";
-            document.getElementById("identify2").style.display            = (this.value == "identify") ? "block":"none";
-            document.getElementById("charmPerson2").style.display         = (this.value == "charmPerson") ? "block":"none";
-            document.getElementById("tasha2").style.display               = (this.value == "tasha") ? "block":"none";
+            document.getElementById("bane2").style.display                = (spell3.value == "bane") ? "block":"none";
+            document.getElementById("earthTremor2").style.display         = (spell3.value == "earthTremor") ? "block":"none";
+            document.getElementById("thunderWave2").style.display         = (spell3.value == "thunderWave") ? "block":"none";
+            document.getElementById("colorSpray2").style.display          = (spell3.value == "colorSpray") ? "block":"none";
+            document.getElementById("dissonantWhispers2").style.display   = (spell3.value == "dissonantWhispers") ? "block":"none";
+            document.getElementById("sleep2").style.display               = (spell3.value == "sleep") ? "block":"none";
+            document.getElementById("fairyFire2").style.display           = (spell3.value == "fairyFire") ? "block":"none";
+            document.getElementById("cureWounds2").style.display          = (spell3.value == "cureWounds") ? "block":"none";
+            document.getElementById("healingWord2").style.display         = (spell3.value == "healingWord") ? "block":"none";
+            document.getElementById("featherFall2").style.display         = (spell3.value == "featherFall") ? "block":"none";
+            document.getElementById("comprehendLanguages2").style.display = (spell3.value == "comprehendLanguages") ? "block":"none";
+            document.getElementById("identify2").style.display            = (spell3.value == "identify") ? "block":"none";
+            document.getElementById("charmPerson2").style.display         = (spell3.value == "charmPerson") ? "block":"none";
+            document.getElementById("tasha2").style.display               = (spell3.value == "tasha") ? "block":"none";
         };
     </script>
 
@@ -721,20 +722,20 @@
     <script>
         var spell4 = document.getElementById("fourthSpell");
         spell4.onchange = function(){
-            document.getElementById("bane3").style.display                = (this.value == "bane") ? "block":"none";
-            document.getElementById("earthTremor3").style.display         = (this.value == "earthTremor") ? "block":"none";
-            document.getElementById("thunderWave3").style.display         = (this.value == "thunderWave") ? "block":"none";
-            document.getElementById("colorSpray3").style.display          = (this.value == "colorSpray") ? "block":"none";
-            document.getElementById("dissonantWhispers3").style.display   = (this.value == "dissonantWhispers") ? "block":"none";
-            document.getElementById("sleep3").style.display               = (this.value == "sleep") ? "block":"none";
-            document.getElementById("fairyFire3").style.display           = (this.value == "fairyFire") ? "block":"none";
-            document.getElementById("cureWounds3").style.display          = (this.value == "cureWounds") ? "block":"none";
-            document.getElementById("healingWord3").style.display         = (this.value == "healingWord") ? "block":"none";
-            document.getElementById("featherFall3").style.display         = (this.value == "featherFall") ? "block":"none";
-            document.getElementById("comprehendLanguages3").style.display = (this.value == "comprehendLanguages") ? "block":"none";
-            document.getElementById("identify3").style.display            = (this.value == "identify") ? "block":"none";
-            document.getElementById("charmPerson3").style.display         = (this.value == "charmPerson") ? "block":"none";
-            document.getElementById("tasha3").style.display               = (this.value == "tasha") ? "block":"none";
+            document.getElementById("bane3").style.display                = (spell4.value == "bane") ? "block":"none";
+            document.getElementById("earthTremor3").style.display         = (spell4.value == "earthTremor") ? "block":"none";
+            document.getElementById("thunderWave3").style.display         = (spell4.value == "thunderWave") ? "block":"none";
+            document.getElementById("colorSpray3").style.display          = (spell4.value == "colorSpray") ? "block":"none";
+            document.getElementById("dissonantWhispers3").style.display   = (spell4.value == "dissonantWhispers") ? "block":"none";
+            document.getElementById("sleep3").style.display               = (spell4.value == "sleep") ? "block":"none";
+            document.getElementById("fairyFire3").style.display           = (spell4.value == "fairyFire") ? "block":"none";
+            document.getElementById("cureWounds3").style.display          = (spell4.value == "cureWounds") ? "block":"none";
+            document.getElementById("healingWord3").style.display         = (spell4.value == "healingWord") ? "block":"none";
+            document.getElementById("featherFall3").style.display         = (spell4.value == "featherFall") ? "block":"none";
+            document.getElementById("comprehendLanguages3").style.display = (spell4.value == "comprehendLanguages") ? "block":"none";
+            document.getElementById("identify3").style.display            = (spell4.value == "identify") ? "block":"none";
+            document.getElementById("charmPerson3").style.display         = (spell4.value == "charmPerson") ? "block":"none";
+            document.getElementById("tasha3").style.display               = (spell4.value == "tasha") ? "block":"none";
         };
     </script>
 
