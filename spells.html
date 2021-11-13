@@ -404,6 +404,92 @@
         </div>
     </div>
 
+    <h2> Please select your spells and cantrips. </h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <select id="spell1" class="drop">
+                <option value="bane"> Bane </option>
+                <option value="earthTremor"> Earth Tremor </option>
+                <option value="thunderWave"> Thunder Wave </option>
+                <option value="colorSpray"> Color Spray </option>
+                <option value="dissonantWhispers"> Dissonant Whispers </option>
+                <option value="sleep"> Sleep </option>
+                <option value="fairyFire"> Fairy Fire </option>
+                <option value="cureWounds"> Cure Wounds </option>
+                <option value="healingWord"> Healing Word </option>
+                <option value="featherFall"> Feather Fall </option>
+                <option value="comprehendLanguages"> Comprehend Languages </option>
+                <option value="identify"> Identify </option>
+                <option value="charmPerson"> Charm Person </option>
+                <option value="tasha"> Tasha's Hideous Laughter </option>
+            </select>
+        </div>
+        <div id="bane" class="col-md-8">
+            <p> Curse your enemies to make it harder for them to hit you and avoid being hit by your friends. </p>
+        </div>
+        <div id="earthTremor" class="col-md-8">
+            <p> 1. </p>
+        </div>
+        <div id="thunderWave" class="col-md-8">
+            <p> 2 </p>
+        </div>
+        <div id="colorSpray" class="col-md-8">
+            <p> 3 </p>
+        </div>
+        <div id="dissonantWhispers" class="col-md-8">
+            <p> 4 </p>
+        </div>
+        <div id="sleep" class="col-md-8">
+            <p> 5 </p>
+        </div>
+        <div id="fairyFire" class="col-md-8">
+            <p> 6 </p>
+        </div>
+        <div id="cureWounds" class="col-md-8">
+            <p> 7 </p>
+        </div>
+        <div id="healingWord" class="col-md-8">
+            <p> 8 </p>
+        </div>
+        <div id="featherFall" class="col-md-8">
+            <p> 9 </p>
+        </div>
+        <div id="comprehendLanguages" class="col-md-8">
+            <p> 10</p>
+        </div>
+        <div id="identify" class="col-md-8">
+            <p> 11 </p>
+        </div>
+        <div id="charmPerson" class="col-md-8">
+            <p> 12 </p>
+        </div>
+        <div id="tasha" class="col-md-8">
+            <p> 13 </p>
+        </div>
+    </div>
+
+    <script>
+        var elem = document.getElementById("spell1");
+        elem.onchange = function(){
+            document.getElementById("bane").style                = (this.value == "bane") ? "block":"none";
+            document.getElementById("earthTremor").style         = (this.value == "earthTremor") ? "block":"none";
+            document.getElementById("thunderWave").style         = (this.value == "thunderWave") ? "block":"none";
+            document.getElementById("colorSpray").style          = (this.value == "colorSpray") ? "block":"none";
+            document.getElementById("dissonantWhispers").style   = (this.value == "dissonantWhispers") ? "block":"none";
+            document.getElementById("sleep").style               = (this.value == "sleep") ? "block":"none";
+            document.getElementById("fairyFire").style           = (this.value == "fairyFire") ? "block":"none";
+            document.getElementById("cureWounds").style          = (this.value == "cureWounds") ? "block":"none";
+            document.getElementById("healingWord").style         = (this.value == "healingWord") ? "block":"none";
+            document.getElementById("featherFall").style         = (this.value == "featherFall") ? "block":"none";
+            document.getElementById("comprehendLanguages").style = (this.value == "comprehendLanguages") ? "block":"none";
+            document.getElementById("identify").style            = (this.value == "identify") ? "block":"none";
+            document.getElementById("charmPerson").style         = (this.value == "charmPerson") ? "block":"none";
+            document.getElementById("tasha").style               = (this.value == "tasha") ? "block":"none";
+
+        };
+    </script>
+
     <!---  CHANGE WITHIN ME --->
   </div>
 </div>
