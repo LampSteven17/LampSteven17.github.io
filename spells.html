@@ -660,8 +660,7 @@
     </div>
 
     <script>
-        var spell1 = document.getElementById("firstSpell");
-        spell1.onchange = function(){
+        document.getElementById("firstSpell").onchange = function(){
             document.getElementById("bane").style.display                = (this.value == "bane") ? "block":"none";
             document.getElementById("earthTremor").style.display         = (this.value == "earthTremor") ? "block":"none";
             document.getElementById("thunderWave").style.display         = (this.value == "thunderWave") ? "block":"none";
