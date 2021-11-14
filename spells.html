@@ -739,6 +739,84 @@
         };
     </script>
 
+    <h3> Cantrips </h3>
+
+    <div class="row">
+        <div class="col-md-4">
+            <select id="firstCantrip" class="drop">
+                <option value="bladeWard"> Blade Ward </option>
+                <option value="thunderClap"> Thunder Clap </option>
+                <option value="viciousMockery"> Vicious Mockery </option>
+                <option value="mageHand"> Color Spray </option>
+                <option value="mending"> Mending </option>
+            </select>
+        </div>
+        <div id="bladeWard" class="col-md-8" style="display:none;">
+            <p> Make your self resistance to the next weapon attack you take. </p>
+        </div>
+        <div id="thunderClap" class="col-md-8" style="display:none;">
+            <p> Damage all of the enemies around you using thunder energy. </p>
+        </div>
+        <div id="viciousMockery" class="col-md-8" style="display:none;">
+            <p> Mock your enemies to cause them mental harm and make it harder for them to hit your friends. </p>
+        </div>
+        <div id="mageHand" class="col-md-8" style="display:none;">
+            <p> The ability to move objects with your mind from a safe distance. </p>
+        </div>
+        <div id="mending" class="col-md-8" style="display:none;">
+            <p> Magically fix broken objects. </p>
+        </div>
+    </div>
+
+    <script>
+        var cantrip1 = document.getElementById("firstCantrip")
+        cantrip1.onchange = function(){
+            document.getElementById("bladeWard").style.display      = (cantrip1.value == "bladeWard") ? "block":"none";
+            document.getElementById("thunderClap").style.display    = (cantrip1.value == "thnuderClap") ? "block":"none";
+            document.getElementById("viciousMockery").style.display = (cantrip1.value == "viciousMockery") ? "block":"none";
+            document.getElementById("mageHand").style.display       = (cantrip1.value == "mageHand") ? "block":"none";
+            document.getElementById("mending").style.display        = (cantrip1.value == "mending") ? "block":"none";
+        };
+    </script>
+
+    <div class="row">
+        <div class="col-md-4">
+            <select id="secondCantrip" class="drop">
+                <option value="bladeWard"> Blade Ward </option>
+                <option value="thunderClap"> Thunder Clap </option>
+                <option value="viciousMockery"> Vicious Mockery </option>
+                <option value="mageHand"> Color Spray </option>
+                <option value="mending"> Mending </option>
+            </select>
+        </div>
+        <div id="bladeWard1" class="col-md-8" style="display:none;">
+            <p> Make your self resistance to the next weapon attack you take. </p>
+        </div>
+        <div id="thunderClap1" class="col-md-8" style="display:none;">
+            <p> Damage all of the enemies around you using thunder energy. </p>
+        </div>
+        <div id="viciousMockery1" class="col-md-8" style="display:none;">
+            <p> Mock your enemies to cause them mental harm and make it harder for them to hit your friends. </p>
+        </div>
+        <div id="mageHand1" class="col-md-8" style="display:none;">
+            <p> The ability to move objects with your mind from a safe distance. </p>
+        </div>
+        <div id="mending1" class="col-md-8" style="display:none;">
+            <p> Magically fix broken objects. </p>
+        </div>
+    </div>
+
+    <script>
+        var cantrip2 = document.getElementById("firstCantrip")
+        cantrip2.onchange = function(){
+            document.getElementById("bladeWard1").style.display      = (cantrip2.value == "bladeWard") ? "block":"none";
+            document.getElementById("thunderClap1").style.display    = (cantrip2.value == "thnuderClap") ? "block":"none";
+            document.getElementById("viciousMockery1").style.display = (cantrip2.value == "viciousMockery") ? "block":"none";
+            document.getElementById("mageHand1").style.display       = (cantrip2.value == "mageHand") ? "block":"none";
+            document.getElementById("mending1").style.display        = (cantrip2.value == "mending") ? "block":"none";
+        };
+    </script>
+
     <!---  CHANGE WITHIN ME --->
   </div>
 </div>
