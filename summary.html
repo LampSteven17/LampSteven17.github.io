@@ -15,7 +15,29 @@
             var classElem = document.getElementById("selection_class");
             var classText = classElem.options[classElem.selectedIndex].text;
 
-            var data = new Blob(["Archetype: ", archText, "\nClass: ", classText], {type: 'text/plain'});
+            var subElem = document.getElementById("subtypeSelect");
+            var subText = subElem.options[subElem.selectedIndex].text;
+
+            var strElem = document.getElementById("strVal");
+            var strText = strElem.options[strElem.selectedIndex].text;
+
+            var dexElem = document.getElementById("dexVal");
+            var dexText = dexElem.options[dexElem.selectedIndex].text;
+
+            var conElem = document.getElementById("conVal");
+            var conText = conElem.options[conElem.selectedIndex].text;
+
+            var intElem = document.getElementById("intVal");
+            var intText = intElem.options[intElem.selectedIndex].text;
+
+            var wisElem = document.getElementById("wisVal");
+            var wisText = wisElem.options[wisElem.selectedIndex].text;
+
+            var chaElem = document.getElementById("chaVal");
+            var chaText = chaElem.options[chaElem.selectedIndex].text;
+
+            var data = new Blob(["Archetype: ", archText, "\nClass: ", classText, "\nSubclass: ", subText, "\nAbility Scores:\nStrength: ",
+            strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ", chaText], {type: 'text/plain'});
 
             var url = window.URL.createObjectURL(data);
 
