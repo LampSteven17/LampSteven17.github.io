@@ -4,18 +4,16 @@
 
     <h1>Your Character:</h1>
 
-    <input id="clickMe" type="button" value="Download Your Character" onclick="WriteToFile();" />
+    <a id="download_link" download="my_exported_file.txt" href=”” >Download Character Info</a>
 
     <script type ="text/javascript">
-        function WriteToFile() {
+        var archElem = document.getElementById("archetypeSelect");
+        var archText = archElem.options[archElem.selectedIndex].text;
+        var data = new Blob([archText], {type: 'text/plain'});
 
-            set fso = CreateObject("Scripting.FileSystemObject");
-            set s = fso.CreateTextFile("C:\test.txt", True);
-            s.writeline("hello");
-            //s.writeline(document.passForm.input2.value);
-            //s.writeline(document.passForm.input3.value);
-            s.Close();
-        }
+        var url = window.URL.createObjectURL(data);
+
+        document.getElementById('download_link').href = url;
   </script>
 
     <!--
