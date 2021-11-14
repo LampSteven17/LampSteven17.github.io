@@ -48,8 +48,8 @@
             var raceElem = document.getElementById("choose_race");
             var raceText = raceElem.options[raceElem.selectedIndex].text;
 
-            var backElem = document.getElementById("background");
-            var backText = backElem.options[backElem.selectedIndex].text;
+            //var backElem = document.getElementById("background");
+            //var backText = backElem.options[backElem.selectedIndex].text;
 
             var spell1Elem = document.getElementById("firstSpell");
             var spell1Text = spell1Elem.options[spell1Elem.selectedIndex].text;
@@ -69,10 +69,11 @@
             var cantrip2Elem = document.getElementById("secondCantrip");
             var cantrip2Text = cantrip2Elem.options[cantrip2Elem.selectedIndex].text;
 
+            //"\nBackground: ", backText,
 
             var data = new Blob(["Archetype: ", archText, "\nClass: ", classText, "\nSubclass: ", subText, "\nAbility Scores:\nStrength: ",
             strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ",
-            chaText, "\nProficiencies: ", prof1Text, ", ", prof2Text, ", ", prof3Text, "\nRace: ", raceText, "\nBackground: ", backText, "\nSpells: ",
+            chaText, "\nProficiencies: ", prof1Text, ", ", prof2Text, ", ", prof3Text, "\nRace: ", raceText,  "\nSpells: ",
             spell1Text, ", ", spell2Text, ", ", spell3Text, ", ", spell4Text, "\nCantrips: ", cantrip1Text, ", ", cantrip2Text], {type: 'text/plain'});
 
             var url = window.URL.createObjectURL(data);
