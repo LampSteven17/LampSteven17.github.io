@@ -124,28 +124,28 @@
               document.getElementById("prof3").onchange();
 
               //SPELLS - CANTRIPS
-              document.getElementById("closeCantrip").style.display = 'block';
-              document.getElementById("rangedCantrip").style.display = 'none';
-              document.getElementById("healerCantrip").style.display = 'none';
-              document.getElementById("stealthCantrip").style.display = 'none';
-              document.getElementById("allCantrip").style.display = 'none';
-              //SPELLS - LVL1
-              document.getElementById("closeSpell").style.display = 'block';
-              document.getElementById("rangedSpell").style.display = 'none';
-              document.getElementById("healerSpell").style.display = 'none';
-              document.getElementById("stealthSpell").style.display = 'none';
-              document.getElementById("allSpell").style.display = 'none';
+              document.getElementById("firstCantrip").value = "bladeWard";
+              document.getElementById("firstCantrip").onchange();
 
+              document.getElementById("secondCantrip").value = "thunderClap";
+              document.getElementById("secondCantrip").onchange();
+
+              //SPELLS - LVL1
               document.getElementById("firstSpell").value = "bane";
               document.getElementById("firstSpell").onchange();
+
               document.getElementById("secondSpell").value = "earthTremor";
               document.getElementById("secondSpell").onchange();
+
               document.getElementById("thirdSpell").value = "thunderWave";
               document.getElementById("thirdSpell").onchange();
+              
               document.getElementById("fourthSpell").value = "colorSpray";
               document.getElementById("fourthSpell").onchange();
 
-            case "1arch":
+              break;
+
+             case "NOT GONNA USE THIS RN":
               //SPELLS - CANTRIPS
               document.getElementById("closeCantrip").style.display = 'none';
               document.getElementById("rangedCantrip").style.display = 'block';
@@ -167,9 +167,6 @@
               document.getElementById("thirdSpell").onchange();
               document.getElementById("fourthSpell").value = "fairyFire";
               document.getElementById("fourthSpell").onchange();
-
-
-
 
               break;
 
