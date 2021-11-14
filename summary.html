@@ -4,11 +4,12 @@
 
     <h1>Your Character:</h1>
 
-    <p> <var> archText </var> </p>
+    <p id="role"></p>
 
     <script>
         var archElem = document.getElementById("archetypeSelect");
         var archText = archElem.options[archElem.selectedIndex].text;
+        document.getElementById("role").innerHTML = archText;
     </script>
 
 
