@@ -4,16 +4,19 @@
 
     <h1>Your Character:</h1>
 
-    <a id="download_link" download="my_exported_file.txt" href=”” >Download Character Info</a>
+    <a id="download_link" download="CharacterInfo.txt" href=”” onclick="createFile()" >Download Character Info</a>
 
     <script type ="text/javascript">
-        var archElem = document.getElementById("archetypeSelect");
-        var archText = archElem.options[archElem.selectedIndex].text;
-        var data = new Blob([archText], {type: 'text/plain'});
+        var downloader = document.getElementById("download_link");
+        downloader.onclick = function(){
+            var archElem = document.getElementById("archetypeSelect");
+            var archText = archElem.options[archElem.selectedIndex].text;
+            var data = new Blob([archText], {type: 'text/plain'});
 
-        var url = window.URL.createObjectURL(data);
+            var url = window.URL.createObjectURL(data);
 
-        document.getElementById('download_link').href = url;
+            document.getElementById('download_link').href = url;
+        }
   </script>
 
     <!--
