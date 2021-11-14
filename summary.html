@@ -36,8 +36,44 @@
             var chaElem = document.getElementById("chaVal");
             var chaText = chaElem.options[chaElem.selectedIndex].text;
 
+            var prof1Elem = document.getElementById("prof1");
+            var prof1Text = prof1Elem.options[prof1Elem.selectedIndex].text;
+
+            var prof2Elem = document.getElementById("prof2");
+            var prof2Text = prof2Elem.options[prof2Elem.selectedIndex].text;
+
+            var prof3Elem = document.getElementById("prof3");
+            var prof3Text = prof3Elem.options[prof3Elem.selectedIndex].text;
+
+            var raceElem = document.getElementById("choose_race");
+            var raceText = raceElem.options[raceElem.selectedIndex].text;
+
+            var backElem = document.getElementById("background");
+            var backText = backElem.options[backElem.selectedIndex].text;
+
+            var spell1Elem = document.getElementById("firstSpell");
+            var spell1Text = spell1Elem.options[spell1Elem.selectedIndex].text;
+
+            var spell2Elem = document.getElementById("secondSpell");
+            var spell2Text = spell2Elem.options[spell2Elem.selectedIndex].text;
+
+            var spell3Elem = document.getElementById("thirdSpell");
+            var spell3Text = spell3Elem.options[spell3Elem.selectedIndex].text;
+
+            var spell4Elem = document.getElementById("fourthSpell");
+            var spell4Text = spell4Elem.options[spell4Elem.selectedIndex].text;
+
+            var cantrip1Elem = document.getElementById("firstCantrip");
+            var cantrip1Text = cantrip1Elem.options[cantrip1Elem.selectedIndex].text;
+
+            var cantrip2Elem = document.getElementById("secondCantrip");
+            var cantrip2Text = cantrip2Elem.options[cantrip2Elem.selectedIndex].text;
+
+
             var data = new Blob(["Archetype: ", archText, "\nClass: ", classText, "\nSubclass: ", subText, "\nAbility Scores:\nStrength: ",
-            strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ", chaText], {type: 'text/plain'});
+            strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ",
+            chaText, "\nProficiencies: ", prof1Text, ", ", prof2Text, ", ", prof3Text, "\nRace: ", raceText, "\nBackground: ", backText, "\nSpells: ",
+            spell1Text, ", ", spell2Text, ", ", spell3Text, ", ", spell4Text, "\nCantrips: ", cantrip1Text, ", ", cantrip2Text], {type: 'text/plain'});
 
             var url = window.URL.createObjectURL(data);
 
