@@ -93,6 +93,7 @@
             case "0arch":
               //SUBCLASS
               document.getElementById("subtypeSelect").value = "0suby";
+              document.getElementById("subtypeSelect").onchange();
 
               //ABILITY SCORES
               document.getElementById("strVal").value = 10;
@@ -139,36 +140,67 @@
 
               document.getElementById("thirdSpell").value = "thunderWave";
               document.getElementById("thirdSpell").onchange();
-              
+
               document.getElementById("fourthSpell").value = "colorSpray";
               document.getElementById("fourthSpell").onchange();
 
               break;
 
-             case "NOT GONNA USE THIS RN":
-              //SPELLS - CANTRIPS
-              document.getElementById("closeCantrip").style.display = 'none';
-              document.getElementById("rangedCantrip").style.display = 'block';
-              document.getElementById("healerCantrip").style.display = 'none';
-              document.getElementById("stealthCantrip").style.display = 'none';
-              document.getElementById("allCantrip").style.display = 'none';
-              //SPELLS - LVL1
-              document.getElementById("closeSpell").style.display = 'none';
-              document.getElementById("rangedSpell").style.display = 'block';
-              document.getElementById("healerSpell").style.display = 'none';
-              document.getElementById("stealthSpell").style.display = 'none';
-              document.getElementById("allSpell").style.display = 'none';
+              case "1arch":
+                //SUBCLASS
+                document.getElementById("subtypeSelect").value = "1suby";
+                document.getElementById("subtypeSelect").onchange();
 
-              document.getElementById("firstSpell").value = "bane";
-              document.getElementById("firstSpell").onchange();
-              document.getElementById("secondSpell").value = "dissonantWhispers";
-              document.getElementById("secondSpell").onchange();
-              document.getElementById("thirdSpell").value = "sleep";
-              document.getElementById("thirdSpell").onchange();
-              document.getElementById("fourthSpell").value = "fairyFire";
-              document.getElementById("fourthSpell").onchange();
+                //ABILITY SCORES
+                document.getElementById("strVal").value = 10;
+                document.getElementById("strVal").onchange();
 
-              break;
+                document.getElementById("dexVal").value = 14;
+                document.getElementById("dexVal").onchange();
+
+                document.getElementById("conVal").value = 13;
+                document.getElementById("conVal").onchange();
+
+                document.getElementById("intVal").value =  8;
+                document.getElementById("intVal").onchange();
+
+                document.getElementById("wisVal").value = 12;
+                document.getElementById("wisVal").onchange();
+
+                document.getElementById("chaVal").value = 15;
+                document.getElementById("chaVal").onchange();
+
+                //PROFICIENCIES
+                document.getElementById("prof1").value = "Persuasion";
+                document.getElementById("prof1").onchange();
+
+                document.getElementById("prof2").value = "Acrobatics";
+                document.getElementById("prof2").onchange();
+
+                document.getElementById("prof3").value = "Deception";
+                document.getElementById("prof3").onchange();
+
+                //SPELLS - CANTRIPS
+                document.getElementById("firstCantrip").value = "viciousMockery";
+                document.getElementById("firstCantrip").onchange();
+
+                document.getElementById("secondCantrip").value = "mageHand";
+                document.getElementById("secondCantrip").onchange();
+
+                //SPELLS - LVL1
+                document.getElementById("firstSpell").value = "bane";
+                document.getElementById("firstSpell").onchange();
+
+                document.getElementById("secondSpell").value = "dissonantWhispers";
+                document.getElementById("secondSpell").onchange();
+
+                document.getElementById("thirdSpell").value = "sleep";
+                document.getElementById("thirdSpell").onchange();
+
+                document.getElementById("fourthSpell").value = "fairyFire";
+                document.getElementById("fourthSpell").onchange();
+
+                break;
 
 
           }
