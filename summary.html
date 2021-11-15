@@ -69,10 +69,23 @@
             var cantrip2Elem = document.getElementById("secondCantrip");
             var cantrip2Text = cantrip2Elem.options[cantrip2Elem.selectedIndex].text;
 
+            var equip1Elem = document.getElementById("rapier");
+            var equip1Text = equip1Elem.options[equip1Elem.selectedIndex].text;
+
+            var equip2Elem = document.getElementById("epack");
+            var equip2Text = equip2Elem.options[equip2Elem.selectedIndex].text;
+
+            var equip3Elem = document.getElementById("jeffery");
+            var equip3Text = equip3Elem.options[equip3Elem.selectedIndex].text;
+
+            var equip4Elem = document.getElementById("laaad");
+            var equip4Text = equip4Elem.options[equip4Elem.selectedIndex].text;
+
             var data = new Blob(["Archetype: ", archText, "\nClass: ", classText, "\nSubclass: ", subText, "\nAbility Scores:\nStrength: ",
             strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ",
             chaText, "\nProficiencies: ", prof1Text, ", ", prof2Text, ", ", prof3Text, "\nRace: ", raceText, "\nBackground: ", backText, "\nSpells: ",
-            spell1Text, ", ", spell2Text, ", ", spell3Text, ", ", spell4Text, "\nCantrips: ", cantrip1Text, ", ", cantrip2Text, "\nEquipment: "], {type: 'text/plain'});
+            spell1Text, ", ", spell2Text, ", ", spell3Text, ", ", spell4Text, "\nCantrips: ", cantrip1Text, ", ", cantrip2Text, "\nEquipment: ",
+            equip1Text, ", ", equip2Text, ", ", equip3Text, ", ", equip4Text], {type: 'text/plain'});
 
             var url = window.URL.createObjectURL(data);
 
