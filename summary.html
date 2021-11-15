@@ -69,17 +69,13 @@
             var cantrip2Elem = document.getElementById("secondCantrip");
             var cantrip2Text = cantrip2Elem.options[cantrip2Elem.selectedIndex].text;
 
-            var equip1Elem = document.getElementById("rapier");
-            var equip1Text = equip1Elem.text;
+            var equip1Text = document.getElementById("rapier").innerHTML;
 
-            var equip2Elem = document.getElementById("epack");
-            var equip2Text = equip2Elem.text;
+            var equip2Text = document.getElementById("epack").innerHTML;
 
-            var equip3Elem = document.getElementById("jeffery");
-            var equip3Text = equip3Elem.text;
+            var equip3Text = document.getElementById("jeffery").innerHTML;
 
-            var equip4Elem = document.getElementById("laaad");
-            var equip4Text = equip4Elem.text;
+            var equip4Text = document.getElementById("laaad").innerHTML;
 
             var data = new Blob(["Archetype: ", archText, "\nClass: ", classText, "\nSubclass: ", subText, "\nAbility Scores:\nStrength: ",
             strText, "\nDexterity: ", dexText, "\nConstitution: ", conText, "\nIntelligence: ", intText, "\nWisdom: ", wisText, "\nCharisma: ",
