@@ -1,6 +1,6 @@
 # Site settings
 title: Steven Lamp
-email: vxn3kr@virginia.edu
+email: lamps17@virginia.edu
 url: https://LampSteven17.github.io
 description: "First Year Computer Science PhD Student "
 
@@ -24,10 +24,4 @@ markdown: kramdown
 permalink: pretty
 
 
-# Cock&Mock Settings
-mocktitle: The Cock & Mock
-mockemail: pmon22609@gmail.com
-mockurl: https://LampSteven17.github.io/cocktails
-mockdescription: "Open Source Cocktails"
 
-mockfooter: The Cock & Mock
