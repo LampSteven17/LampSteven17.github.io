@@ -42,18 +42,9 @@
                 <li>Name your VM</li>
                 <li>Choose your ISO image</li>
                 <li>Set your edition of Windows 11</li>
+                <li>Make sure to skip the unattended installation section, as we want to manage the installation process.</li>
             </ul>
             <img src="/img/nameOS.png"/>
-            <p>&nbsp</p>
-
-
-            <p>Complete the following for Unattended Install:</p>
-            <ul style = "list-style-type: none">
-                <li>Set your username</li>
-                <li>Set your password and confirm the password</li>
-                <li>Set your hostname</li>
-            </ul>
-            <img src="/img/unIn.png"/>
             <p>&nbsp</p>
 
             <p>I chose to leave all hardware configuration at its deafult: 4096MB for ram and 2 CPUs. Make sure Enable EFI is checked.</p>
@@ -64,7 +55,7 @@
             <img src="/img/virtualHardDisk.png"/>
             <p>&nbsp</p>
 
-            <p>Click finish to save the configuration of the Virtual Machine, but BEFORE THE MACHINE BOOTS POWER IT OFF. You need to configure some extra things in the settings before you are able to properly boot.</p>
+            <p>Click finish to save the configuration of the Virtual Machine, and the machine should not boot. If it does, make sure to power it off.</p>
             <img src="/img/poweredOff.png"/>
             <p>&nbsp</p>
 
@@ -101,8 +92,33 @@
 
         <h3>Boot and Install VirtIO Drivers to Windows VM</h3>
             <p>Start the Virtual Machine, and when prompted press any key to begin booting the Windows VM</p>
-            <img src="/img/enableSerialPort.png"/>
+            <img src="/img/startVM.png"/>
             <p>&nbsp</p>
+
+            <p>Wait until installation prgoresses to the point where you can select which type of instalation you want, and select custom: install windows only.</p>
+            <img src="/img/win11Drive.png"/>
+            <p>&nbsp</p>
+
+            <p>Select load driver in the installation menu.</p>
+            <img src="/img/loadDriver.png"/>
+            <p>&nbsp</p>
+
+            <p>Select load driver in the installation menu. Browse to the CD drive of the Virtio drivers, and select AMD64, WIN11 folder. Uncheck the hide drivers that aren't compatible with this computer's hardware box.</p>
+            <img src="/img/virtioDrivers.png"/>
+            <p>&nbsp</p>
+
+            <p>Select the Red Hat VirtIO SCSI controller and install by clicking next.</p>
+            <img src="/img/installDrivers.png"/>
+            <p>&nbsp</p>
+
+            <p>Repeat the above steps for the network driver contained in the Virtio drive folder NetKVM/W11/amd64, entitled Red Hat VirtIO Ethernet Adapter.</p>
+            <img src="/img/netDriverInstall.png"/>
+            <p>&nbsp</p>
+
+            <p>Select Drive 0 Unallocated Space to begin installing Windows normally.</p>
+            <img src="/img/installWindows.png"/>
+            <p>&nbsp</p>
+
 
 
     </div>
