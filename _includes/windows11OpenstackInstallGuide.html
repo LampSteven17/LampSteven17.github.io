@@ -24,17 +24,45 @@
 
         <h5>VirtualBox:</h5>
             <code><a href="https://www.virtualbox.org/" target="_blank" >https://www.virtualbox.org/</a></code>
-        <div/>
+        <div></div>
 
         <h5>Windows 11:</h5>
             <code><a href="https://www.microsoft.com/en-us/windows" target="_blank" >https://www.microsoft.com/en-us/windows</a></code>
-        <div/>
+        <div></div>
 
 
 
-        <h3>Configure Your Virtual Machine <b>BEFORE INITAL BOOT</h3>
-            <p>Open VirtualBox and click <b>NEW</b></p>
+        <h3>Configure Your Virtual Machine BEFORE INITAL BOOT</h3>
+            <p>Open VirtualBox and click new</p>
             <img src="/img/startVBOX.png"/>
+
+            <p>Enable the advanced options/expert mode near the bottom of the menu</p>
+            <img src="img/expertMode.png"/>
+
+            <p>Complete the following for Name and Operating System:</p>
+            <ul style = "list-style-type: none">
+                <li>Name your VM</li>
+                <li>Choose your ISO image</li>
+                <li>Set your edition of Windows 11</li>
+            </ul>
+            <img src="img/nameOS.png"/>
+
+
+            <p>Complete the following for Unattended Install:</p>
+            <ul style = "list-style-type: none">
+                <li>Set your username</li>
+                <li>Set your password and confirm the password</li>
+                <li>Set your hostname</li>
+            </ul>
+            <img src="img/unIn.png"/>
+
+            <p>I chose to leave all hardware configuration at its deafult: 4096MB for ram and 2 CPUs. Make sure Enable EFI is checked.</p>
+            <img src="img/hardware.png"/>
+
+            <p>I also left the Hard Disk configuration at default, with 80GB Hard disk and set to format VDI for creation of the virtual hard disk.</p>
+            <img src="img/virtualHardDisk.png"/>
+
+            <p>Click finish to save the configuration of the Virtual Machine, but BEFORE THE MACHINE BOOTS POWER IT OFF. You need to configure some extra things in the settings before you are able to properly boot.</p>
 
 
 
