@@ -3,7 +3,7 @@
     <head>
         <h1>How to Create Windows 11 Virtual Machines in Openstack with Virtio Drivers & Cloudinit</h1>
         <img src="/img/openStackGuides.png"/>
-        <p>If you were anything like me at the time of writing this article, then you would realize that their is not a single person on this planet that understands fully how Openstack works. Ditto to Windows 11. Here is how to configure a virtual machine in VirtualBox using Windows 11, and upload the image properly to work with Openstack.</p>
+        <p>If you were anything like me at the time of writing this article, then you would realize that their is not a single person on this planet that fully understands how Openstack works. Ditto to Windows 11. Here is how to configure a virtual machine in VirtualBox using Windows 11, and upload the image with proper configurations to work with Openstack.</p>
 
         <p>I also found these other articles extremely helpful for further reference:
             <ul style="list-style-type: none">
@@ -33,11 +33,11 @@
 
 
         <h3>Configure Your Virtual Machine BEFORE INITAL BOOT</h3>
-            <p>Open VirtualBox and click new</p>
+            <p>Open VirtualBox and click new.</p>
             <img src="/img/startVBOX.png"/>
             <p>&nbsp</p>
 
-            <p>Enable the advanced options/expert mode near the bottom of the menu</p>
+            <p>Enable the advanced options/expert mode near the bottom of the menu.</p>
             <img src="/img/expertMode.png"/>
             <p>&nbsp</p>
 
@@ -70,6 +70,22 @@
 
             <p>Click finish to save the configuration of the Virtual Machine, but BEFORE THE MACHINE BOOTS POWER IT OFF. You need to configure some extra things in the settings before you are able to properly boot.</p>
             <img src="/img/poweredOff.png"/>
+            <p>&nbsp</p>
+
+
+
+
+            <p>In settings, click Storage and then the "Controller:SATA". We need to add the VIRTIO drivers as another hard drive to boot during windows installation. Click on the floppy disk with a green plus sign.</p>
+            <img src="/img/floppyDisk.png"/>
+            <p>&nbsp</p>
+
+            <p>Attach a new optical disk containing the VIRTIO drivers by:</p>
+            <ul style = "list-style-type: none">
+                <li>Seelecting new optical disk from the aformentioned floppy disk icon.</li>
+                <li>Click Add, and select the virtio Iso drivers from the directory in which they were downloaded</li>
+                <li>Select the virtio iso that appears</li>
+            </ul>
+            <img src="/img/addVirtio.png"/>
             <p>&nbsp</p>
 
 
