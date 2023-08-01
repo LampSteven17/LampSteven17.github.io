@@ -91,7 +91,7 @@
 
 
         <h3>Boot and Install VirtIO Drivers to Windows VM</h3>
-            <p>Start the Virtual Machine, and when prompted press any key to begin booting the Windows VM</p>
+            <p>Start the Virtual Machine, and when prompted press any key to begin booting the Windows VM.</p>
             <img src="/img/startVM.png"/>
             <p>&nbsp</p>
 
@@ -118,6 +118,17 @@
             <p>Select Drive 0 Unallocated Space to begin installing Windows normally.</p>
             <img src="/img/installWindows.png"/>
             <p>&nbsp</p>
+
+
+
+        <h3>Enable Remote Desktop</h3>
+            <p>Once you are logged in to the home screen, bring up powershell as administrator and run the following command:</p>
+            <code>Enable-NetFirewallRule -name RemoteDesktop-UserMode-In-TCP</code>
+            <p>Then, make sure to open up Remote Desktop Settings, and enable remote desktop.</p>
+            <img src="/img/enableRemoteDesktop.png"/>
+            <p>&nbsp</p>
+
+
 
 
 
