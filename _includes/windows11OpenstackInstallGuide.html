@@ -122,8 +122,8 @@
 
 
         <h3>Enable Remote Desktop</h3>
-            <p>Once you are logged in to the home screen, bring up powershell as administrator and run the following command:
-            <code>Enable-NetFirewallRule -name RemoteDesktop-UserMode-In-TCP</code></p>
+            <p style="margin:0px">Once you are logged in to the home screen, bring up powershell as administrator and run the following command:</p>
+            <code>Enable-NetFirewallRule -name RemoteDesktop-UserMode-In-TCP</code>
             <p>Then, make sure to open up Remote Desktop Settings, and enable remote desktop.</p>
             <img src="/img/enableRemoteDesktop.png"/>
             <p>&nbsp</p>
@@ -140,19 +140,21 @@
 
             <p>Once the installation finished, make sure to check the run sysprep and shutdown boxes to prepare your VM for upload into openstack.</p>
             <img src="/img/enableSysPrep.png"/>
-            <p>&nbsp</p>
+            
 
 
         <h3>Upload Your Image Into Openstack</h3>
             <p>For efficency sake, I converted my .vdi file to a .qcow2 before uploading into openstack using the below command:</p>
             <code>qemu-img convert -f vdi -O qcow2 win11_virtio_demo.vdi win11_virtio_demo.qcow2</code>
-            <p>Next, upload your image to openstack using the following command</p>
+            <p>Next, upload your image to openstack using the following command:</p>
             <code>openstack image create "win11_virtio_demo" --disk-format qcow2 --min-ram 4096 --min-disk 80 --file win11_virtio_demo.qcow2</code>
             <p>Lastly, make sure to enable UEFI boot on your openstack image with the following command</p>
             <code>openstack image set --property hw_firmware_type=uefi ID-OF-YOUR-VM-HERE</code>
             <p>You can find your ID in openstack with the following command</p>
             <code>openstack image list</code>
 
+        <p>&nbsp</p>
+        <p>&nbsp</p>
         <h3>That should be it! You should now have a running Windows 11 VM in openstack, but if it doesn't work, try re-running the process again, as this workflow can be very finnicky and tempremental.</h3>
 
     </div>
