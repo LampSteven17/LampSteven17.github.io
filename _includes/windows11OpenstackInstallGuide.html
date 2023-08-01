@@ -129,8 +129,31 @@
             <p>&nbsp</p>
 
 
+        <h3>Install Cloud-Init</h3>
+            <p>In powershell as administrator, run the following commands:</p>
+            <code>Set-ExecutionPolicy Unrestricted</code>
+            <code>Invoke-WebRequest -UseBasicParsing https://cloudbase.it/downloads/CloudbaseInitSetup_Stable_x64.msi -OutFile cloudbaseinit.msi</code>
+            <code>./cloudbaseinit.msi</code>
+            <p>Once the installer opens, click next until you reach the configuration options and enable COM1 as the serial port for logging.</p>
+            <img src="/img/enableCom1.png"/>
+            <p>&nbsp</p>
+
+            <p>Once the installation finished, make sure to check the run sysprep and shutdown boxes to prepare your VM for upload into openstack.</p>
+            <img src="/img/enableSysPrep.png"/>
+            <p>&nbsp</p>
 
 
+        <h3>Upload Your Image Into Openstack</h3>
+            <p>For efficency sake, I converted my .vdi file to a .qcow2 before uploading into openstack using the below command:</p>
+            <code>qemu-img convert -f vdi -O qcow2 win11_virtio_demo.vdi win11_virtio_demo.qcow2</code>
+            <p>Next, upload your image to openstack using the following command</p>
+            <code>openstack image create "win11_virtio_demo" --disk-format qcow2 --min-ram 4096 --min-disk 80 --file win11_virtio_demo.qcow2</code>
+            <p>Lastly, make sure to enable UEFI boot on your openstack image with the following command</p>
+            <code>openstack image set --property hw_firmware_type=uefi ID-OF-YOUR-VM-HERE</code>
+            <p>You can find your ID in openstack with the following command</p>
+            <code>openstack image list</code>
+
+        <h3>That should be it! You should now have a running Windows 11 VM in openstack, but if it doesn't work, try re-running the process again, as this workflow can be very finnicky and tempremental.</h3>
 
     </div>
 </section>
