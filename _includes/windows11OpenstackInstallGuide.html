@@ -20,15 +20,15 @@
 
     <div class="row">
         <h3>Prerequisites: Download a Win11 Iso and Install Virtualbox to Your Machine</h3>
-            <p style="margin:10px">The first thing you need to do is get VirtualBox downloaded and installed onto your machine. For the purposes of this tutorial I will be using a Windows 11 machine with WSL2(Ubuntu 22.04) for the command line interface.</p>
+            <p style="margin:0px">The first thing you need to do is get VirtualBox downloaded and installed onto your machine. For the purposes of this tutorial I will be using a Windows 11 machine with WSL2(Ubuntu 22.04) for the command line interface.</p>
 
-        <h5>VirtualBox:<a href="https://www.virtualbox.org/" target="_blank" > https://www.virtualbox.org/</a></h5>
+            <p>VirtualBox:<a href="https://www.virtualbox.org/" target="_blank" > https://www.virtualbox.org/</a></p>
 
-        <h5>Windows 11:<a href="https://www.microsoft.com/en-us/windows" target="_blank" > https://www.microsoft.com/en-us/windows</a></h5>
+            <p>Windows 11:<a href="https://www.microsoft.com/en-us/windows" target="_blank" > https://www.microsoft.com/en-us/windows</a></p>
+            <p>&nbsp</p>
 
 
-
-        <h3>Configure Your Virtual Machine BEFORE INITAL BOOT</h3>
+        <h3>Configure Your Virtual Machine Before Inital Booting</h3>
             <p style="margin:0px">Open VirtualBox and click new.</p>
             <img src="/img/startVBOX.png"/>
             <p>&nbsp</p>
@@ -37,8 +37,8 @@
             <img src="/img/expertMode.png"/>
             <p>&nbsp</p>
 
-            <p>Complete the following for Name and Operating System:</p>
-            <ul style = "padding-top:0px; list-style-type: none">
+            <p style="margin:0px">Complete the following for Name and Operating System:</p>
+            <ul style = "margin:0px; list-style-type: none">
                 <li>Name your VM</li>
                 <li>Choose your ISO image</li>
                 <li>Set your edition of Windows 11</li>
@@ -47,27 +47,27 @@
             <img src="/img/nameOS.png"/>
             <p>&nbsp</p>
 
-            <p>I chose to leave all hardware configuration at its deafult: 4096MB for ram and 2 CPUs. Make sure Enable EFI is checked.</p>
+            <p style="margin:0px">I chose to leave all hardware configuration at its deafult: 4096MB for ram and 2 CPUs. Make sure Enable EFI is checked.</p>
             <img src="/img/hardware.png"/>
             <p>&nbsp</p>
 
-            <p>I also left the Hard Disk configuration at default, with 80GB Hard disk and set to format VDI for creation of the virtual hard disk.</p>
+            <p style="margin:0px">I also left the Hard Disk configuration at default, with 80GB Hard disk and set to format VDI for creation of the virtual hard disk.</p>
             <img src="/img/virtualHardDisk.png"/>
             <p>&nbsp</p>
 
-            <p>Click finish to save the configuration of the Virtual Machine, and the machine should not boot. If it does, make sure to power it off.</p>
+            <p style="margin:0px">Click finish to save the configuration of the Virtual Machine, and the machine should not boot. If it does, make sure to power it off.</p>
             <img src="/img/poweredOff.png"/>
             <p>&nbsp</p>
 
 
 
 
-            <p>In settings, click Storage and then the "Controller:SATA". We need to add the VIRTIO drivers as another hard drive to boot during windows installation. Click on the floppy disk with a green plus sign.</p>
+            <p style="margin:0px">In settings, click Storage and then the "Controller:SATA". We need to add the VIRTIO drivers as another hard drive to boot during windows installation. Click on the floppy disk with a green plus sign.</p>
             <img src="/img/floppyDisk.png"/>
             <p>&nbsp</p>
 
-            <p>Attach a new optical disk containing the VIRTIO drivers by:</p>
-            <ul style = "list-style-type: none">
+            <p style="margin:0px">Attach a new optical disk containing the VIRTIO drivers by:</p>
+            <ul style = "margin:0px; list-style-type: none">
                 <li>Selecting new optical disk from the aformentioned floppy disk icon.</li>
                 <li>Click Add, and select the virtio Iso drivers from the directory in which they were downloaded</li>
                 <li>Select the virtio iso that appears in the attached volumes.</li>
@@ -76,46 +76,46 @@
             <img src="/img/addVirtio.png"/>
             <p>&nbsp</p>
 
-            <p>You will know you have done this step correctly whena new optical drive appears attached in the storage devices section</p>
+            <p style="margin:0px">You will know you have done this step correctly whena new optical drive appears attached in the storage devices section</p>
             <img src="/img/virtioIsAttached.png"/>
             <p>&nbsp</p>
 
-            <p>Next, head over to the Network settings and complete the following:</p>
-            <p>Set the first network adapter to virtio-net in the advanced settings</p>
+            <p style="margin:0px">Next, head over to the Network settings and complete the following:</p>
+            <p style="margin:0px">Set the first network adapter to virtio-net in the advanced settings.</p>
             <img src="/img/setVirtio.png"/>
             <p>&nbsp</p>
 
-            <p>Lastly, enable the first port for logging with cloudinit in the serial ports section</p>
+            <p style="margin:0px">Lastly, enable the first port for logging with cloudinit in the serial ports section</p>
             <img src="/img/enableSerialPort.png"/>
             <p>&nbsp</p>
 
 
         <h3>Boot and Install VirtIO Drivers to Windows VM</h3>
-            <p>Start the Virtual Machine, and when prompted press any key to begin booting the Windows VM.</p>
+            <p style="margin:0px">Start the Virtual Machine, and when prompted press any key to begin booting the Windows VM.</p>
             <img src="/img/startVM.png"/>
             <p>&nbsp</p>
 
-            <p>Wait until installation prgoresses to the point where you can select which type of instalation you want, and select custom: install windows only.</p>
+            <p style="margin:0px">Wait until installation prgoresses to the point where you can select which type of instalation you want, and select custom: install windows only.</p>
             <img src="/img/win11Drive.png"/>
             <p>&nbsp</p>
 
-            <p>Select load driver in the installation menu.</p>
+            <p style="margin:0px">Select load driver in the installation menu.</p>
             <img src="/img/loadDriver.png"/>
             <p>&nbsp</p>
 
-            <p>Select load driver in the installation menu. Browse to the CD drive of the Virtio drivers, and select AMD64, WIN11 folder. Uncheck the hide drivers that aren't compatible with this computer's hardware box.</p>
+            <p style="margin:0px">Select load driver in the installation menu. Browse to the CD drive of the Virtio drivers, and select AMD64, WIN11 folder. Uncheck the hide drivers that aren't compatible with this computer's hardware box.</p>
             <img src="/img/virtioDrivers.png"/>
             <p>&nbsp</p>
 
-            <p>Select the Red Hat VirtIO SCSI controller and install by clicking next.</p>
+            <p style="margin:0px">Select the Red Hat VirtIO SCSI controller and install by clicking next.</p>
             <img src="/img/installDrivers.png"/>
             <p>&nbsp</p>
 
-            <p>Repeat the above steps for the network driver contained in the Virtio drive folder NetKVM/W11/amd64, entitled Red Hat VirtIO Ethernet Adapter.</p>
+            <p style="margin:0px">Repeat the above steps for the network driver contained in the Virtio drive folder NetKVM/W11/amd64, entitled Red Hat VirtIO Ethernet Adapter.</p>
             <img src="/img/netDriverInstall.png"/>
             <p>&nbsp</p>
 
-            <p>Select Drive 0 Unallocated Space to begin installing Windows normally.</p>
+            <p style="margin:0px">Select Drive 0 Unallocated Space to begin installing Windows normally.</p>
             <img src="/img/installWindows.png"/>
             <p>&nbsp</p>
 
@@ -124,33 +124,33 @@
         <h3>Enable Remote Desktop</h3>
             <p style="margin:0px">Once you are logged in to the home screen, bring up powershell as administrator and run the following command:</p>
             <code>Enable-NetFirewallRule -name RemoteDesktop-UserMode-In-TCP</code>
-            <p>Then, make sure to open up Remote Desktop Settings, and enable remote desktop.</p>
+            <p style="margin:0px">Then, make sure to open up Remote Desktop Settings, and enable remote desktop.</p>
             <img src="/img/enableRemoteDesktop.png"/>
             <p>&nbsp</p>
 
 
         <h3>Install Cloud-Init</h3>
-            <p>In powershell as administrator, run the following commands:</p>
+            <p style="margin:0px">In powershell as administrator, run the following commands:</p>
             <code>Set-ExecutionPolicy Unrestricted</code>
             <code>Invoke-WebRequest -UseBasicParsing https://cloudbase.it/downloads/CloudbaseInitSetup_Stable_x64.msi -OutFile cloudbaseinit.msi</code>
             <code>./cloudbaseinit.msi</code>
-            <p>Once the installer opens, click next until you reach the configuration options and enable COM1 as the serial port for logging.</p>
+            <p style="margin:0px">Once the installer opens, click next until you reach the configuration options and enable COM1 as the serial port for logging.</p>
             <img src="/img/enableCom1.png"/>
             <p>&nbsp</p>
 
-            <p>Once the installation finished, make sure to check the run sysprep and shutdown boxes to prepare your VM for upload into openstack.</p>
+            <p style="margin:0px">Once the installation finished, make sure to check the run sysprep and shutdown boxes to prepare your VM for upload into openstack.</p>
             <img src="/img/enableSysPrep.png"/>
             
 
 
         <h3>Upload Your Image Into Openstack</h3>
-            <p>For efficency sake, I converted my .vdi file to a .qcow2 before uploading into openstack using the below command:</p>
+            <p style="margin:0px">For efficency sake, I converted my .vdi file to a .qcow2 before uploading into openstack using the below command:</p>
             <code>qemu-img convert -f vdi -O qcow2 win11_virtio_demo.vdi win11_virtio_demo.qcow2</code>
-            <p>Next, upload your image to openstack using the following command:</p>
+            <p style="margin:0px">Next, upload your image to openstack using the following command:</p>
             <code>openstack image create "win11_virtio_demo" --disk-format qcow2 --min-ram 4096 --min-disk 80 --file win11_virtio_demo.qcow2</code>
-            <p>Lastly, make sure to enable UEFI boot on your openstack image with the following command</p>
+            <p style="margin:0px">Lastly, make sure to enable UEFI boot on your openstack image with the following command</p>
             <code>openstack image set --property hw_firmware_type=uefi ID-OF-YOUR-VM-HERE</code>
-            <p>You can find your ID in openstack with the following command</p>
+            <p style="margin:0px">You can find your ID in openstack with the following command</p>
             <code>openstack image list</code>
 
         <p>&nbsp</p>
