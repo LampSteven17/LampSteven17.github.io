@@ -4,32 +4,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is Steven Lamp's personal academic website built as a Jekyll GitHub Pages site. The site showcases his work as a Computer Science PhD student at the University of Virginia, with a focus on cybersecurity and user emulation techniques.
+This is Incandescent Studios (IcS) professional website built as a Jekyll GitHub Pages site. The site serves as a professional hub for three main areas: Academic Research, Photography, and Music.
 
 ## Architecture
 
 ### Jekyll Structure
-- **_config.yml**: Jekyll configuration with site metadata, color scheme, and social links
-- **_layouts/default.html**: Main page layout that includes all section components
-- **_includes/**: Modular HTML components that make up different sections of the single-page site:
-  - `header.html`: Hero section
-  - `about.html`: About section
-  - `announcments.html`: Announcements section
-  - `edexp.html`: Education/Experience section
-  - `docs.html`: Documentation/Projects section
-  - `contact.html`: Contact information
-  - `windows11OpenstackInstallGuide.html`: Technical guide content
-  - `nav.html`, `footer.html`, `head.html`, `js.html`: Navigation, footer, and asset includes
+- **_config.yml**: Jekyll configuration with Incandescent Studios branding, deep crimson and black color scheme
+- **_layouts/default.html**: Main page layout with professional dark theme
+- **_includes/**: Modular HTML components:
+  - `head.html`: HTML head with CSS imports and metadata
+  - `nav.html`: Horizontal navigation bar with logo and main section links
+  - `hero.html`: Minimal hero section with Incandescent Studios logo and IcS subtitle
+  - `footer.html`: Simple footer with copyright and social links
 
 ### Static Assets
-- **css/**: Contains font-awesome icons directory
-- **js/**: Bootstrap, jQuery, and theme JavaScript files
-- **img/**: Image assets
-- **style.css**: Custom styles (currently minimal)
+- **css/main.css**: Custom CSS with deep crimson (#B22222) and black theme
+- **img/**: Image assets directory
 
 ### Content Pages
-- **index.html**: Main landing page using default layout
-- **win11-openstack-guide.html**: Dedicated page for Windows 11 OpenStack guide
+- **index.html**: Main landing page with hero section
+- **academic.html**: Academic research and publications page
+- **photography.html**: Photography portfolio and services page
+- **music.html**: Music/drumming EPK page
 
 ## Development
 
@@ -48,4 +44,4 @@ The site is automatically deployed via GitHub Pages when changes are pushed to t
 - The site uses a single-page design with sections loaded via includes
 
 ### Theme
-Based on the Grayscale Jekyll theme by Jerome Lachaud, which itself is based on the Grayscale Bootstrap theme.
+Custom professional dark theme with deep crimson red (#B22222) and black color scheme. Clean, modern design focused on showcasing professional work across academic, photography, and music domains.

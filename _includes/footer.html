@@ -1,6 +1,12 @@
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; {{ site.footer }} 20{{ site.time | date: '%y' }} </p>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.footer }}. All rights reserved.</p>
+        {% if site.social %}
+        <div class="social-links" style="margin-top: 1rem;">
+            {% for network in site.social %}
+            <a href="{{ network.url }}" target="_blank" style="margin: 0 1rem;">{{ network.title | capitalize }}</a>
+            {% endfor %}
         </div>
-    </footer>
+        {% endif %}
+    </div>
+</footer>
