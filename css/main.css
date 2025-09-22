@@ -1,0 +1,156 @@
+/* Incandescent Studios - Main Stylesheet */
+
+/* Color Variables */
+:root {
+  --primary-black: #000000;
+  --primary-red: #B22222;
+  --text-light: #FFFFFF;
+  --text-muted: #CCCCCC;
+  --background-dark: #0A0A0A;
+  --background-darker: #000000;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--background-darker);
+  border-bottom: 2px solid var(--primary-red);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.logo .accent {
+  color: var(--primary-red);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--background-darker) 0%, var(--background-dark) 100%);
+}
+
+.hero-logo {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.hero-logo .accent {
+  color: var(--primary-red);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Main Content */
+.main-content {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--background-darker);
+  border-top: 1px solid var(--primary-red);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hero-logo {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Links */
+a {
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-light);
+}

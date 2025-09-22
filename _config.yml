@@ -1,16 +1,19 @@
 # Site settings
-title: Steven Lamp
+title: Incandescent Studios
 email: lamps17@virginia.edu
 url: https://LampSteven17.github.io
-description: "Third Year Computer Science PhD Candidate "
+description: "Professional Studios - Academic Research, Photography, and Music"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  primary-red: '#B22222'
+  links: '#B22222'
+  text-light: '#FFFFFF'
+  text-muted: '#CCCCCC'
 
 # Footer settings
-footer: Steven Lamp
+footer: Incandescent Studios
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
